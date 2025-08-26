@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Byond Asia</title>
+    <!-- Font Awesome Free -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://sdk.klleon.io/klleon-chat/0.11.1/klleon_chat_sdk.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Outfit', sans-serif; }
+        .progress-ring { transition: stroke-dashoffset 0.1s; transform: rotate(-90deg); transform-origin: 50% 50%; }
+        .center-circle { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+        @keyframes pulse { 0%,100%{opacity:1;transform:scale(1);} 50%{opacity:.7;transform:scale(0.9);} }
+        .modal-fade { transition: opacity .25s, transform .25s; }
+        .modal-fade.hidden { opacity: 0; pointer-events: none; transform: scale(0.97);}
+        .modal-fade.visible { opacity: 1; pointer-events: auto; transform: scale(1);}
+        .glow-btn { transition: box-shadow 0.3s, transform 0.2s, background 0.3s; box-shadow: 0 4px 24px 0 #3b82f655, 0 1.5px 10px 0 #cbd5e188; }
+        .glow-btn:hover { box-shadow: 0 8px 24px 0 #3b82f6bb, 0 2px 16px 0 #818cf899; transform: translateY(-3px) scale(1.06);}
+        .glow-btn:active { transform: scale(0.95); box-shadow: 0 1px 5px #64748b44; }
+        #off-mic .fa-wave-square { animation: wavePulse 1.3s infinite alternate; }
+        @keyframes wavePulse { 0% { opacity: 0.7; transform: scale(1);} 50% { opacity: 1; transform: scale(1.17);} 100% { opacity: 0.8; transform: scale(1);} }
+        #chat-history, .custom-scrollbar { scrollbar-width: thin; -ms-overflow-style: none; }
+        #chat-history::-webkit-scrollbar { width: 0.44em; background: transparent; }
+        #chat-history::-webkit-scrollbar-thumb { background: #e0e7ff; border-radius: 999px;}
+        #chat-history:hover::-webkit-scrollbar-thumb { background: #93c5fd; }
+        .bubble {
+            min-width: 2.4rem;
+            max-width: 65%;
+            font-size: 0.95rem;
+            border-radius: 1.5rem;
+            padding: 0.6rem 1.2rem;
+            margin-bottom: 0.08rem;
+            box-shadow: 0 3px 18px 0 #cbd5e133;
+            opacity: 0;
+            will-change: transform, opacity;
+            word-break: break-word;
+            transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+        }
+        .bubble.ai {
+            background: linear-gradient(90deg, #f1f5f9 80%, #dbeafe 100%);
+            border: 1.5px solid #dbeafe;
+            color: #374151;
+            align-self: flex-start;
+            animation: slide-in-left 0.46s cubic-bezier(0.32,1.35,0.43,1.03) forwards;
+        }
+        .bubble.user {
+            background: linear-gradient(90deg, #bbf7d0 75%, #4ade80 100%);
+            border: 1.5px solid #a7f3d0;
+            color: #065f46;
+            align-self: flex-end;
+            animation: slide-in-right 0.43s cubic-bezier(0.34,1.45,0.43,1.03) forwards;
+        }
+        @keyframes slide-in-left {
+            0% { opacity: 0; transform: translateX(-40px) scale(0.98);}
+            100% { opacity: 1; transform: translateX(0) scale(1);}
+        }
+        @keyframes slide-in-right {
+            0% { opacity: 0; transform: translateX(40px) scale(0.98);}
+            100% { opacity: 1; transform: translateX(0) scale(1);}
+        }
+        .bubble { -webkit-tap-highlight-color: rgba(0,0,0,0.04); user-select: text; cursor: text; }
+        @media (max-width: 700px) {
+            .size-\[4vw\], .size-\[4.5vw\], .size-\[5vw\] {
+                min-width: 3.8rem !important;
+                min-height: 3.8rem !important;
+                width: 3.8rem !important;
+                height: 3.8rem !important;
+            }
+            .text-\[2vw\], .text-\[2.2vw\], .text-\[2.3vw\], .text-\[1.6vw\], .text-\[2.5vw\] {
+                font-size: 1.4rem !important;
+            }
+        }
+
+        /* --- NEW STYLES REPLICATING THE LATEST IMAGE --- */
+        .product-card {
+            scroll-snap-align: center;
+            flex: 0 0 auto;
+            width: 14rem; /* 224px - wider for more text */
+            height: 22rem; /* 352px - taller for description */
+            position: relative;
+
+            /* Lighter Glassmorphism Effect */
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1.5px solid rgba(255, 255, 255, 0.5);
+            border-radius: 1.5rem; /* 24px */
+            
+            padding: 1.25rem;
+            
+            /* Layout: Push text content to the bottom */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            
+            color: #1e293b; /* Dark text color (slate-800) */
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            cursor: pointer;
+            overflow: visible; /* Allow highlight to scale out */
+        }
+
+        /* Highlighted central card */
+        .product-card.highlighted {
+            transform: scale(1.08);
+            background: rgba(255, 255, 255, 0.6);
+            border-color: white;
+            z-index: 10; /* Bring to front */
+        }
+
+        /* Interactive hover for non-highlighted cards */
+        .product-card:not(.highlighted):hover {
+            transform: translateY(-8px) scale(1.03);
+            border-color: rgba(255, 255, 255, 1);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .product-text-content {
+            text-align: center;
+        }
+
+        .product-name {
+            font-size: 1.125rem; /* 18px */
+            font-weight: 700;
+            line-height: 1.3;
+        }
+
+        .product-category {
+            font-size: 0.875rem; /* 14px */
+            color: #475569; /* slate-600 */
+            margin-top: 0.125rem; /* 2px */
+        }
+
+        .product-price {
+            font-size: 0.875rem; /* 14px - smaller for longer text */
+            font-weight: 500;
+            margin-top: 0.75rem;
+            line-height: 1.4;
+            max-height: 4.5rem; /* Limit height and add ellipsis */
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+        }
+
+        /* "NEW" tag styling */
+        .product-tag {
+            position: absolute;
+            top: 1rem;
+            left: 1rem;
+            background-color: #fef08a; /* yellow-200 */
+            color: #a16207; /* yellow-700 */
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem; /* 12px */
+            font-weight: 600;
+        }
+        #product-carousel::-webkit-scrollbar { 
+            display: none; 
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-[#e0e7ff] via-white to-[#f1f5f9] min-h-screen relative overflow-hidden">
+
+    <!-- Loader -->
+    <div id="loadercontainer"
+         class="fixed top-0 left-0 w-full h-full bg-white/90 text-black flex flex-col items-center justify-center z-50 transition-opacity duration-500 opacity-100 visible pointer-events-auto">
+        <svg class="w-[22vw] h-[22vw] drop-shadow-2xl" viewBox="0 0 100 100">
+            <circle cx="50" cy="50" r="44" fill="none" stroke="#e0e7ff" stroke-width="7" opacity="0.7"/>
+            <defs>
+                <linearGradient id="loader-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#60a5fa" />
+                    <stop offset="60%" stop-color="#6366f1" />
+                    <stop offset="100%" stop-color="#f472b6" />
+                </linearGradient>
+                <filter id="loader-glow" x="-40%" y="-40%" width="180%" height="180%">
+                    <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+                    <feMerge>
+                        <feMergeNode in="coloredBlur"/>
+                        <feMergeNode in="SourceGraphic"/>
+                    </feMerge>
+                </filter>
+            </defs>
+            <circle id="progress-ring-filled" cx="50" cy="50" r="44" fill="none"
+                stroke="url(#loader-gradient)" stroke-width="7"
+                stroke-dasharray="276.4" stroke-dashoffset="276.4"
+                stroke-linecap="round"
+                style="filter:url(#loader-glow); transition:stroke-dashoffset 0.5s;">
+                <animate attributeName="stroke-dashoffset"
+                    values="276.4;0;276.4"
+                    dur="2s"
+                    repeatCount="indefinite"/>
+            </circle>
+            <circle class="center-circle" cx="50" cy="50" r="10" fill="#6366f1" opacity="0.88">
+                <animate attributeName="r" values="10;14;10" dur="1.6s" repeatCount="indefinite"/>
+                <animate attributeName="opacity" values="0.88;0.65;0.88" dur="1.6s" repeatCount="indefinite"/>
+            </circle>
+        </svg>
+        <div class="mt-12 font-semibold text-[2vw] text-black text-center tracking-tight animate-pulse">
+            Processing...
+        </div>
+    </div>
+
+    <div id="klleon_chat" class="w-full h-full absolute inset-0 z-10 pointer-events-none"></div>
+
+    <!-- Chat history - MOVED UP -->
+    <div class="fixed top-[30vh] left-0 w-full max-h-[50vh] px-2 z-30">
+        <div id="chat-history"
+            class="flex flex-col gap-2 overflow-y-auto max-h-[50vh] px-3 py-1 custom-scrollbar"
+            style="
+                overscroll-behavior: contain;
+                scroll-behavior: smooth;
+                touch-action: pan-y;
+            ">
+        </div>
+    </div>
+
+    <!-- Controls: Middle right, vertically stacked -->
+    <div id="controls-stack"
+        class="fixed right-4 top-1/4 -translate-y-[36%] z-50 flex flex-col items-end space-y-4 select-none">
+        
+        <button onclick="show_language();"
+            id="lang-btn"
+            class="glow-btn bg-gradient-to-br from-yellow-200 to-yellow-400 hover:from-yellow-300 hover:to-yellow-500 ring-2 ring-yellow-200 border-2 border-yellow-400 shadow size-[5vw] min-w-[3.8rem] min-h-[3.8rem] rounded-full flex items-center justify-center transition-all duration-200 group"
+            title="Change Language" aria-label="Change Language">
+            <span id="current-lang-display" class="text-yellow-800 text-[2.5vw] font-bold"></span>
+        </button>
+
+        <button id="on-mic"
+            class="glow-btn rounded-full bg-gradient-to-br from-emerald-400 to-emerald-600 shadow-xl ring-2 ring-emerald-200 hover:from-emerald-500 hover:to-emerald-700 size-[5vw] min-w-[3.8rem] min-h-[3.8rem] flex items-center justify-center border-4 border-white transition-all duration-200 group"
+            title="Start Listening" aria-label="Start Listening">
+            <span id="mic-icon">
+                <i class="fa-solid fa-microphone-lines text-white text-[2.5vw] group-hover:scale-110 transition"></i>
+            </span>
+        </button>
+        <button id="off-mic"
+            class="hidden glow-btn rounded-full bg-gradient-to-br from-blue-400 to-indigo-600 shadow-xl ring-2 ring-indigo-200 hover:from-blue-500 hover:to-indigo-700 size-[5vw] min-w-[3.8rem] min-h-[3.8rem] flex items-center justify-center border-4 border-white transition-all duration-200"
+            title="Stop Listening" aria-label="Stop Listening">
+            <i class="fa-solid fa-wave-square text-white text-[2.5vw] animate-pulse"></i>
+        </button>
+        <button id="stop-btn"
+            class="hidden glow-btn rounded-full bg-gradient-to-br from-rose-500 to-red-700 shadow-xl ring-2 ring-rose-200 hover:from-rose-600 hover:to-red-800 size-[5vw] min-w-[3.8rem] min-h-[3.8rem] flex items-center justify-center border-4 border-white transition-all duration-200"
+            title="Stop Speaking" aria-label="Stop Speaking">
+            <i class="fa-solid fa-circle-stop text-white text-[2.5vw]"></i>
+        </button>
+    </div>
+
+    <!-- Language Modal -->
+    <div id="myModal"
+        class="modal-fade hidden fixed left-0 top-0 w-full h-full flex items-start justify-center pt-[35vh] z-50 bg-black/40">
+        <div class="bg-white/95 rounded-3xl px-[4vw] py-[4vw] shadow-2xl min-w-[50vw] max-w-[90vw] border border-blue-100 relative">
+            <button id="close-lang-btn"
+                class="absolute right-[2vw] top-[2vw] text-gray-400 hover:text-blue-600 transition"
+                style="font-size:3vw;" title="Close">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="font-bold text-xl text-blue-700 mb-5 flex items-center gap-2">
+                <i class="fa-solid fa-globe text-yellow-700"></i> Choose Language
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 max-h-[60vh] overflow-y-auto">
+                <button onclick="load_avatar('ms_my');" class="modal-button bg-blue-50 hover:bg-blue-100 border border-blue-300 rounded-2xl flex flex-col items-center justify-center text-[1.1em] font-semibold py-3 px-2 transition gap-1" id="btn_ms_my"><span class="text-2xl">🇲🇾</span> Malay<span id="span_ms_my"></span></button>
+                <button onclick="load_avatar('ar_sa');" class="modal-button bg-blue-50 hover:bg-blue-100 border border-blue-300 rounded-2xl flex flex-col items-center justify-center text-[1.1em] font-semibold py-3 px-2 transition gap-1" id="btn_ar_sa"><span class="text-2xl">🇸🇦</span> Arabic<span id="span_ar_sa"></span></button>
+                <button onclick="load_avatar('ko_kr');" class="modal-button bg-blue-50 hover:bg-blue-100 border border-blue-300 rounded-2xl flex flex-col items-center justify-center text-[1.1em] font-semibold py-3 px-2 transition gap-1" id="btn_ko_kr"><span class="text-2xl">🇰🇷</span> Korean<span id="span_ko_kr"></span></button>
+                <button onclick="load_avatar('en_us');" class="modal-button bg-blue-50 hover:bg-blue-100 border border-blue-300 rounded-2xl flex flex-col items-center justify-center text-[1.1em] font-semibold py-3 px-2 transition gap-1" id="btn_en_us"><span class="text-2xl">🇺🇸</span> English<span id="span_en_us"></span></button>
+                <button onclick="load_avatar('ja_jp');" class="modal-button bg-blue-50 hover:bg-blue-100 border border-blue-300 rounded-2xl flex flex-col items-center justify-center text-[1.1em] font-semibold py-3 px-2 transition gap-1" id="btn_ja_jp"><span class="text-2xl">🇯🇵</span> Japanese<span id="span_ja_jp"></span></button>
+                <button onclick="load_avatar('es_es');" class="modal-button bg-blue-50 hover:bg-blue-100 border border-blue-300 rounded-2xl flex flex-col items-center justify-center text-[1.1em] font-semibold py-3 px-2 transition gap-1" id="btn_es_es"><span class="text-2xl">🇪🇸</span> Spanish<span id="span_es_es"></span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Carousel Container -->
+    <div id="product-carousel-container" class="fixed bottom-0 left-0 right-0 z-40 p-4 transition-transform duration-500 ease-in-out translate-y-full">
+        <div class="w-full mx-auto">
+            <div id="product-carousel" class="flex gap-4 overflow-x-auto pb-4 px-4" style="scroll-snap-type: x mandatory; -ms-overflow-style: none;">
+                <!-- Product cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // --- Core variables ---
+        const urlParams = new URLSearchParams(window.location.search);
+        let character_id = urlParams.get('character_id') || '5b49a434-604b-4ce9-b113-7c0ce9096517';
+        let speech_speed = parseFloat(urlParams.get('speech_speed') || 1.0);
+        let language = urlParams.get('language_id') || 'en_us';
+        let force_stop = false, animated_text = true, on_mic = false;
+        const sleepScreen = document.getElementById('loadercontainer');
+        
+        // --- Inactivity UserID Refresh Logic ---
+        let inactivityTimeout = null;
+        function newUserId() {
+            const userid = `usr_${Math.random().toString(36).substring(2, 8)}`;
+            localStorage.setItem('userid', userid);
+            return userid;
+        }
+        function refreshUserId() {
+            newUserId();
+            chatHistory.innerHTML = ''; 
+            console.log('[UserID Refresh] Refreshed due to inactivity.');
+        }
+        function touchActivity() {
+            if (inactivityTimeout) clearTimeout(inactivityTimeout);
+            inactivityTimeout = setTimeout(refreshUserId, 180000);
+        }
+
+        // --- Chat bubble/stack and Product Carousel logic ---
+        const chatHistory = document.getElementById('chat-history');
+        const productCarouselContainer = document.getElementById('product-carousel-container');
+        const productCarousel = document.getElementById('product-carousel');
+
+        function addBubble(message, side = "left") {
+            touchActivity();
+            const bubble = document.createElement('div');
+            bubble.className = `bubble ${side === 'left' ? 'ai' : 'user'}`;
+            bubble.innerText = message;
+            chatHistory.appendChild(bubble);
+            setTimeout(() => {
+                bubble.style.opacity = "1";
+                chatHistory.scrollTo({top: chatHistory.scrollHeight, behavior: 'smooth'});
+            }, 20);
+        }
+
+        // --- UPDATED: Function to render amenity cards in the new style ---
+        function displayProducts(amenities) {
+            productCarousel.innerHTML = '';
+
+            if (!amenities || amenities.length === 0) {
+                productCarouselContainer.classList.add('translate-y-full');
+                return;
+            }
+            
+            amenities.forEach((amenity, index) => {
+                // Highlight the first card for better UX
+                const isHighlighted = index === 0;
+                const highlightClass = isHighlighted ? 'highlighted' : '';
+                const newTagHTML = isHighlighted ? `<div class="product-tag">TOP</div>` : '';
+                
+                // Extract amenity information with better parsing
+                const name = amenity.title || amenity.name || amenity.type || 'Amenity';
+                const description = amenity.description || amenity.details || '';
+                const category = amenity.type || amenity.category || '';
+                const rating = amenity.rating || '';
+                const distance = amenity.distance || amenity.Distance || '';
+                const examples = amenity.examples ? amenity.examples.join(', ') : '';
+                
+                // Create display text - prioritize description
+                let displayText = description;
+                if (!displayText && examples) displayText = examples;
+                if (!displayText && category) displayText = category;
+                
+                // Add rating and distance if available
+                let additionalInfo = '';
+                if (rating) additionalInfo += ` ${rating}⭐`;
+                if (distance) additionalInfo += ` • ${distance}`;
+                if (additionalInfo) displayText += additionalInfo;
+
+                const cardHTML = `
+                    <div class="product-card ${highlightClass}">
+                        ${newTagHTML}
+                        <div class="product-text-content">
+                            <div class="product-name">${name}</div>
+                            <div class="product-category">${category}</div>
+                            <div class="product-price">${displayText}</div>
+                        </div>
+                    </div>
+                `;
+                productCarousel.insertAdjacentHTML('beforeend', cardHTML);
+            });
+
+            productCarouselContainer.classList.remove('translate-y-full');
+        }
+
+        // --- Loader helpers ---
+        function showLoader() {
+            touchActivity();
+            sleepScreen.classList.remove('opacity-0', 'invisible', 'pointer-events-none');
+            sleepScreen.classList.add('opacity-100', 'visible', 'pointer-events-auto');
+        }
+        function hideLoader() {
+            touchActivity();
+            sleepScreen.classList.remove('opacity-100', 'visible', 'pointer-events-auto');
+            sleepScreen.classList.add('opacity-0', 'invisible', 'pointer-events-none');
+        }
+        const show = el => { touchActivity(); el.classList.remove('hidden'); };
+        const hide = el => { touchActivity(); el.classList.add('hidden'); };
+        function fadeModal(modal, showIt = true) {
+            touchActivity();
+            if (showIt) {
+                modal.classList.remove('hidden');
+                setTimeout(() => modal.classList.add('visible'), 10);
+            } else {
+                modal.classList.remove('visible');
+                setTimeout(() => modal.classList.add('hidden'), 250);
+            }
+        }
+
+        // --- Language Display ---
+        const LANG_MAP = { ms_my: "MS", ar_sa: "AR", ko_kr: "KO", en_us: "EN", ja_jp: "JA", es_es: "ES" };
+        function updateLangDisplay() {
+            touchActivity();
+            const langCode = LANG_MAP[language] || language;
+            document.getElementById('current-lang-display').innerText = langCode;
+            Object.keys(LANG_MAP).forEach(lid => {
+                const span = document.getElementById('span_' + lid);
+                const btn = document.getElementById('btn_' + lid);
+                if (span) span.innerText = '';
+                if (btn) btn.disabled = false;
+            });
+            const currentSpan = document.getElementById('span_' + language);
+            const currentBtn = document.getElementById('btn_' + language);
+            if(currentSpan) currentSpan.innerText = ' (Current)';
+            if(currentBtn) currentBtn.disabled = true;
+        }
+
+        // --- SDK init and playback logic ---
+        (async () => {
+            showLoader();
+            await KlleonChat.init({ sdk_key: 'APP-WJwvCzoYkWZbqqBrrNjM' });
+            KlleonChat.showStreaming({
+                avatar_id: character_id,
+                show_dialog: false,
+                voice_code: language,
+                subtitle_code: language,
+                locale: language,
+                voice_tts_speech_speed: speech_speed,
+                background_color: 0x00000000
+            });
+        })();
+
+        // --- Chat and event handling ---
+        KlleonChat.onChatEvent(data => {
+            touchActivity();
+            const $resp = JSON.parse(data);
+            if ($resp.chat_type === "STT_RESULT") {
+                addBubble($resp.message, "right");
+                askDrSanjay($resp.message);
+                KlleonChat.stopEcho();
+            }
+            if ($resp.chat_type === "RESPONSE_IS_ENDED") {
+                hide(document.getElementById('stop-btn'));
+            }
+            if ($resp.chat_type === "SHOW_AVATAR") {
+                hideLoader();
+            }
+        });
+
+        // --- Avatar/language logic ---
+        const avatarLanguageMap = {
+            '5b49a434-604b-4ce9-b113-7c0ce9096517': ['ar_sa', 'ko_kr', 'en_us', 'ja_jp', 'es_es', 'ms_my'],
+            '87a0ab12-0090-11ef-8ee1-0abbf354c5cc': ['ko_kr', 'en_us', 'ja_jp', 'es_es', 'id_id'],
+        };
+        function updateLanguageOptions() {
+            touchActivity();
+            const supportedLanguages = avatarLanguageMap[character_id] || [];
+            Object.keys(LANG_MAP).forEach(lid => {
+                const btn = document.getElementById('btn_' + lid);
+                if(btn) btn.style.display = supportedLanguages.includes(lid) ? '' : 'none';
+            });
+        }
+        function show_language() {
+            touchActivity();
+            updateLangDisplay();
+            fadeModal(document.getElementById('myModal'), true);
+            updateLanguageOptions();
+        }
+        document.getElementById('close-lang-btn').onclick = () => fadeModal(document.getElementById('myModal'), false);
+
+        function load_avatar(lid) {
+            touchActivity();
+            const supportedLanguages = avatarLanguageMap[character_id] || [];
+            if (!supportedLanguages.includes(lid)) {
+                alert('This language is not supported for the current avatar');
+                return;
+            }
+            if (lid !== language) {
+                KlleonChat.close();
+                showLoader();
+                chatHistory.innerHTML = '';
+                KlleonChat.showStreaming({
+                    avatar_id: character_id,
+                    show_dialog: false,
+                    voice_code: lid,
+                    subtitle_code: lid,
+                    locale: lid,
+                    voice_tts_speech_speed: speech_speed,
+                });
+            }
+            fadeModal(document.getElementById('myModal'), false);
+            language = lid;
+            updateLangDisplay();
+        }
+
+        // --- Microphone toggle ---
+        document.getElementById('on-mic').onclick = () => {
+            touchActivity();
+            show(document.getElementById('off-mic'));
+            hide(document.getElementById('on-mic'));
+            KlleonChat.startStt();
+            on_mic = true;
+        };
+        document.getElementById('off-mic').onclick = () => {
+            touchActivity();
+            show(document.getElementById('on-mic'));
+            hide(document.getElementById('off-mic'));
+            document.getElementById('mic-icon').innerHTML = `<i class="fa-solid fa-microphone-lines text-white text-[2.5vw]"></i>`;
+            KlleonChat.endStt();
+            on_mic = false;
+        };
+        document.getElementById('stop-btn').onclick = () => {
+            touchActivity();
+            KlleonChat.stopEcho();
+            hide(document.getElementById('stop-btn'));
+            force_stop = true;
+        };
+
+        // --- User ID ---
+        function getOrCreateUserId() {
+            let userid = localStorage.getItem('userid');
+            if (!userid) userid = newUserId();
+            return userid;
+        }
+
+        // --- AI/Backend Logic ---
+        async function askDrSanjay(message) {
+            touchActivity();
+            displayProducts([]); 
+            
+            try {
+                const userid = getOrCreateUserId();
+                const response = await fetch(`${window.location.origin}/chat`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ lang: language, question: message, userid })
+                });
+
+                if (!response.ok) {
+                    const errorData = await response.json();
+                    addBubble(`Sorry, there was an error: ${errorData.detail || 'Unknown error'}`);
+                    return;
+                }
+                
+                const O = await response.json();
+
+                if (O.chatbot_answer && O.products) {
+                    addBubble(O.chatbot_answer, "left");
+                    show(document.getElementById('stop-btn'));
+                    KlleonChat.echo(O.chatbot_answer);
+                    displayProducts(O.products);
+                } else {
+                    addBubble("I received an unusual response. Please try again.");
+                    console.error("Unexpected API response format:", O);
+                }
+
+            } catch (error) {
+                console.error('Error in askDrSanjay:', error);
+                addBubble("I'm having trouble connecting right now. Please try again in a moment.");
+            }
+        }
+
+        // --- Initial setup ---
+        updateLangDisplay();
+        touchActivity();
+
+    </script>
+</body>
+</html>

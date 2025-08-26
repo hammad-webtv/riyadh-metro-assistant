@@ -1,0 +1,50 @@
+{
+    "football teams": [
+      {
+        "team": "Al Hilal",
+        "stadium": "Kingdom Arena",
+        "capacity": "27,000 - 30,000",
+        "nearest_metro_station": "Granadia Station",
+        "metro_line": "Granadia Line",
+        "distance_from_nearest_metro_station": "About 600m; 5-10 minute walk through pedestrian area"
+      },
+      {
+        "team": "Al Nassr",
+        "stadium": "Al-Awwal Park (also known as King Saud University Stadium; formerly known as Mrsool Park)",
+        "capacity": "27,000",
+        "nearest_metro_station": "King Saud University Station",
+        "metro_line": "Red Line",
+        "distance_from_nearest_metro_station": "About 1.5km; 20-25 minute walk, taxi/rideshare available"
+      },
+      {
+        "team": "Al Hilal SFC",
+        "stadium": "Kingdom Arena",
+        "location": "King Abdullah Sports City, Western Riyadh",
+        "nearest_metro_station": "King Abdullah Sports City Station",
+        "metro_line": "Green Line",
+        "distance_from_nearest_metro_station": "Just a short walk (within 500m)"
+      },
+      {
+        "team": "Al Shabab FC",
+        "stadium": "Al Shabab Club Stadium",
+        "location": "As Sahafah, Riyadh 13321",
+        "nearest_metro_station": "Dr. Sulaiman Al-Habib Station",
+        "metro_line": "Blue Line",
+        "distance_from_nearest_metro_station": "Just a short walk (within 500m)"
+      },
+      {
+        "team": "Al Riyadh SC",
+        "stadium": "Prince Turki bin Abdul Aziz Stadium",
+        "location": "Taiba Street, Riyadh 13751",
+        "nearest_metro_station": "No metro station within 2km",
+        "distance_from_nearest_metro_station": "Too far to walk comfortably - taxi, bus, or ride-share required (over 3km)"
+      },
+      {
+        "stadium": "Prince Faisal bin Fahd Stadium",
+        "location": "Al Ameen Abdullah Al Ali Al Naeem St, Riyadh 12836",
+        "closest_station": "Al Malaz",
+        "metro_line": "Orange Line",
+        "note": "Historically hosted Al Hilal, Al Nassr, and Al Shabab. These three teams will share Prince Mohammed bin Salman Stadium in 2029"
+      }
+    ]
+  }

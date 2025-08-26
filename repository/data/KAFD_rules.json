@@ -1,0 +1,126 @@
+[
+    {
+      "section": "Train Rules and Safety",
+      "onboard_and_station_safety": {
+        "security_measures": [
+          "Extensive CCTV surveillance networks",
+          "Fire detection and suppression systems",
+          "Emergency alarms and communication units on platforms and inside trains",
+          "Specialized tunnel ventilation and safety systems"
+        ],
+        "operations": [
+          "Operations Control Center monitors train movements and infrastructure",
+          "Rapid response to any issue",
+          "Intensive pre-launch testing, including stress-tests for heat and sand"
+        ]
+      },
+      "passenger_guidelines": {
+        "noise_policy": "Passengers are expected to maintain a low noise level; no dedicated quiet carriages.",
+        "platform_guidance": "Clear signage and staff assist passengers to the correct section.",
+        "safety_rules": [
+          "No smoking",
+          "No eating on trains",
+          "No unattended luggage"
+        ],
+        "security": "Security personnel and metro staff patrol stations and trains to maintain order."
+      },
+      "overview": "Riyadh Metro integrates modern technology, passenger comfort, and cultural considerations. It connects key landmarks, integrates with buses and park-and-ride facilities, and offers a fast, safe, and convenient way to navigate Riyadh."
+    },
+    {
+      "section": "Etiquette and Train Classes",
+      "train_classes": [
+        {
+          "class": "Singles Class",
+          "description": [
+            "For solo male travelers only",
+            "Single men are expected to use this section exclusively",
+            "Single men cannot enter Family section unless accompanying female relatives"
+          ]
+        },
+        {
+          "class": "Family Class",
+          "description": [
+            "For families with children, including husbands, brothers, fathers, and male relatives",
+            "Women traveling alone or with family",
+            "Mixed family groups",
+            "Single men unrelated to these women and families are NOT allowed",
+            "Women can choose this section for comfort",
+            "Families typically avoid Singles section"
+          ]
+        },
+        {
+          "class": "First Class (VIP/Gold)",
+          "description": [
+            "Premium experience with wider leather seats",
+            "More spacious than other sections",
+            "Requires First Class ticket or pass",
+            "Access restricted to ticket holders only"
+          ]
+        }
+      ],
+      "features": [
+        "Physical separation via glass partitions between sections",
+        "Platform signs indicate boarding locations for each class",
+        "Clear labels and frosted glass partitions inside trains",
+        "Modern, clean, fully air-conditioned",
+        "Digital route maps",
+        "Announcements in Arabic and English"
+      ],
+      "cultural_context": "The arrangement respects local customs, similar to other Gulf metro systems. Solo male travelers must use Singles; women and families can use Family section. First Class offers premium service."
+    },
+    {
+      "section": "Accessibility Features",
+      "station_design": [
+        "Numerous elevators and ramps",
+        "Tactile guidance paths for visually impaired",
+        "Curb cuts and easy drop-off zones"
+      ],
+      "train_features": [
+        "Priority seating for elderly, pregnant women, and disabled riders",
+        "Wheelchair assistance at some main stations"
+      ],
+      "facilities": [
+        "Accessible stalls in restrooms",
+        "Braille signage on some station signs and ticket machines"
+      ],
+      "service_animals": "Service animals may be allowed, but travelers should confirm with customer service due to rarity in KSA.",
+      "overview": "The metro is user-friendly for travelers with mobility challenges, with minimal barriers from street to train."
+    },
+    {
+      "location": "KAFD Nearby Services",
+      "description": "Stepping outside the station (or using the connected walkways), you are in the heart of the King Abdullah Financial District – a modern development filled with offices, residences, and lifestyle destinations.",
+      "features": [
+        {
+          "type": "Plazas and Promenades",
+          "details": "Landscaping and seating, pedestrian-friendly design."
+        },
+        {
+          "type": "Restaurants and Cafés",
+          "range": "Quick-service eateries to upscale dining.",
+          "examples": ["Black Tap Burgers", "Urth Caffé", "Other international restaurant chains"]
+        },
+        {
+          "type": "Shopping Centers and Retail Outlets",
+          "details": "At least one high-end shopping mall and various boutiques featuring luxury brands."
+        },
+        {
+          "type": "Mosque",
+          "details": "Large grand mosque for prayers."
+        },
+        {
+          "type": "Parks and Public Art Installations",
+          "details": "Designed as part of the district's lifestyle amenities."
+        },
+        {
+          "type": "Entertainment Venues",
+          "details": "Included within the district's design."
+        },
+        {
+          "type": "Hotels",
+          "examples": ["Mövenpick", "DoubleTree by Hilton", "Executives Hotel KAFD"],
+          "rating": "4- and 5-star hotels for business travelers."
+        }
+      ],
+      "summary": "KAFD is essentially a 'city within a city' known for its futuristic architecture and comprehensive services, offering amenities for meetings, dining, shopping, and leisure activities."
+    }
+  ]

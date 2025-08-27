@@ -1,0 +1,319 @@
+# Riyadh Metro Comprehensive Knowledge Base
+
+## Metro Overview
+
+The Riyadh Metro is a rapid transit system in Riyadh, Saudi Arabia, featuring six fully automated (driverless) metro lines spanning 176 kilometers and 85 stations. It is the world's longest driverless metro network and forms the backbone of the capital's public transport plan (the King Abdulaziz Public Transport Project). The metro was inaugurated on 27 November 2024 and began phased public operations on 1 December 2024. All six lines became fully operational by 5 January 2025, dramatically improving city mobility.
+
+Construction commenced in 2014 and the project's capital cost was approximately $22.5 billion. The metro is owned and regulated by the Royal Commission for Riyadh City (RCRC). Designed to reduce traffic congestion and pollution, the system has a capacity of up to 3.6 million passengers per day. It connects key districts, business centers, educational institutions, hospitals, and cultural landmarks across Riyadh. An integrated bus network (Riyadh Bus) with dozens of routes and thousands of stops complements the metro, and a unified fare system allows seamless transfers between buses and metro.
+
+## Lines and Stations
+
+Riyadh Metro consists of six color-coded lines (Blue, Red, Orange, Yellow, Green, and Purple) covering the city in different directions. The network includes both underground and elevated tracks, reaching most high-density areas and important sites.
+
+### Line 1 – Blue Line
+
+**Route:** North–south line along the Olaya-Batha corridor (central spine of the city). Runs from SABB (Al Aridh) in the north down to Ad Dar Al-Baida in the south. This line serves major business districts (e.g. Olaya, King Fahad District) and the historic city center (Batha/Qasr Al-Hokm). It intersects with all other metro lines at various points.
+
+**Length and Stations:** 38 km with 25 stations, including 4 transfer interchanges. It opened on December 1, 2024. Key stations on the Blue Line provide access to landmarks such as the King Abdullah Financial District (KAFD), Ministry of Interior, National Museum, and Batha souks.
+
+**Stations on Blue Line:**
+- SABB
+- Dr. Sulaiman Al-Habib (Hospital)
+- King Abdullah Financial District (KAFD) – Transfer to Lines 4 & 6
+- Al-Murooj
+- King Fahad District
+- King Fahad District 2
+- STC (Telecom Company) – Transfer to Line 2
+- Al-Wurud 2
+- Al-Urubah
+- Alinma Bank
+- Bank Albilad
+- King Fahad Library
+- Ministry of Interior
+- Al-Murabba
+- Passport Department
+- National Museum – Transfer to Line 5
+- Al-Bat'ha
+- Qasr Al-Hokm – Transfer to Line 3
+- Al-Owd
+- Skirinah
+- Manfouha
+- Al-Iman Hospital
+- Transportation Center (Public Transit Hub)
+- Al-Aziziah
+- Ad Dar Al-Baida
+
+### Line 2 – Red Line
+
+**Route:** East–west line along King Abdullah Road. Connects King Saud University (west) to King Fahad Stadium (east), passing through northern residential districts and commercial areas. Notable stops include King Saud University campus, Riyadh Exhibition Center, and districts like Al-Nuzhah and Ishbiliyah.
+
+**Length and Stations:** 25.3 km with 15 stations, including 3 interchanges. Opened on December 15, 2024. This line provides a direct link between one of the largest universities and a major sports stadium, and intersects with the Blue, Green, and Purple lines in the network.
+
+**Stations on Red Line:**
+- King Saud University
+- King Salman Oasis
+- KACST (King Abdulaziz City for Science & Tech)
+- At-Takhassusi
+- STC – Transfer to Line 1 (Blue)
+- Al-Wurud
+- King Abdulaziz Road
+- Ministry of Education – Transfer to Line 5 (Green)
+- An Nuzhah
+- Riyadh Exhibition Center
+- Khalid Bin Al-Waleed Road
+- Al-Hamra – Transfer to Line 6 (Purple)
+- Al-Khaleej
+- City Center Ishbiliyah
+- King Fahad Sports City (Stadium)
+
+### Line 3 – Orange Line
+
+**Route:** West–east line along Al-Madinah Al-Munawwarah Rd and Prince Saad Bin Abdulrahman Rd. Runs from Jeddah Road (western terminus) across the city to Khashm Al-An (eastern terminus) near a National Guard base. It passes through central districts and the old downtown: for example, it stops at Qasr Al-Hokm in the city's historic core and at "Railway Station" serving Riyadh's main train station (for the Riyadh–Dammam line). It also includes Western Station, a major bus transit hub on the west end.
+
+**Length and Stations:** 40.7 km with 22 stations, including 2 interchange stations. Opened on January 5, 2025 (the last line of the network to open). The Orange Line intersects with the Blue Line at Qasr Al-Hokm and with the Purple Line at An Naseem.
+
+**Stations on Orange Line:**
+- Jeddah Road
+- Tuwaiq
+- Ad Douh
+- Western Station (transport hub with bus connections)
+- Aishah bint Abi Bakr St.
+- Dhahrat Al-Badiah
+- Sultanah
+- Al-Jarradiyah
+- Courts Complex
+- Qasr Al-Hokm – Transfer to Line 1 (Blue)
+- Al-Hilla
+- Al-Margab
+- As-Salhiyah
+- First Industrial City
+- Railway Station (connects to national rail)
+- Al-Malaz
+- Jarir District
+- Al-Rajhi Grand Mosque
+- Harun Al-Rashid Road
+- An Naseem – Transfer to Line 6 (Purple)
+- Hassan Bin Thabit St.
+- Khashm Al-An
+
+### Line 4 – Yellow Line
+
+**Route:** Northwest to north line that links the King Abdullah Financial District (KAFD) in the city to King Khalid International Airport (KKIA), going via the northern suburbs. It serves the airport terminals directly and also passes by Princess Nourah University (PNU), one of the world's largest women's universities.
+
+**Length and Stations:** 29.6 km with 9 stations, including several interchange points. Opened on December 1, 2024. This line provides the crucial airport connection, with stations at Airport Terminals 5, 3–4, and 1–2. It intersects with the Blue Line and Purple Line at its KAFD terminus.
+
+**Stations on Yellow Line:**
+- King Abdullah Financial District (KAFD) – Transfer to Lines 1 & 6
+- Ar-Rabi' (Al Rabi) – Transfer to Line 6 (Purple)
+- Uthman Bin Affan Road – Transfer to Line 6 (Purple)
+- SABIC (Petrochemical Co.) – Transfer to Line 6 (Purple)
+- PNU (Princess Nourah University)
+- Governmental Complex
+- Airport Terminal 5
+- Airport Terminals 3–4
+- Airport Terminals 1–2
+
+### Line 5 – Green Line
+
+**Route:** A central underground line running along King Abdulaziz Street (north–south through central Riyadh). It extends from the Ministry of Education in the north to the National Museum in the south (near King Abdulaziz Historical Center). This line primarily serves government and administrative districts – many stations are named after ministries and offices – as well as dense urban neighborhoods.
+
+**Length and Stations:** 12.9 km with 12 stations, including 2 interchange stations. Opened on December 15, 2024. The Green Line intersects with the Red Line at Ministry of Education (north end) and with the Blue Line at National Museum (south end).
+
+**Stations on Green Line:**
+- Ministry of Education – Transfer to Line 2 (Red)
+- Salahaddin
+- As-Sulaimaniyah – Transfer to Lines 4 & 6 (Yellow & Purple)
+- Ad Dhabab
+- Abu Dhabi Square
+- Officers Club
+- GOSI (General Organization for Social Insurance) – Transfer to Line 2 (Red)
+- Al-Wizarat ("Ministries")
+- Ministry of Defense
+- MEW&A (Ministry of Environment, Water & Agriculture)
+- Ministry of Finance
+- National Museum – Transfer to Line 1 (Blue)
+
+### Line 6 – Purple Line (Violet Line)
+
+**Route:** A semi-circular "ring" line looping through northern and eastern Riyadh. It runs from KAFD (northwest) across to the east and then south to An Naseem district. The Purple Line passes near Imam Muhammad bin Saud Islamic University, goes through residential areas like Al-Narjis/Granada/Al-Hamra, and terminates at An Naseem in the east. It is mostly elevated except for a section along Sheikh Hasan bin Hussain St.
+
+**Length and Stations:** ~30 km with 11 stations, including 3 interchanges. Opened on December 1, 2024. It shares the KAFD terminus with Line 4, providing another link to the Financial District, and connects with the Red Line at Al-Hamra and the Orange Line at An Naseem. This line helps connect several sprawling suburban districts to the metro grid.
+
+**Stations on Purple Line:**
+- King Abdullah Financial District (KAFD) – Transfer to Lines 1 & 4
+- Ar-Rabi' – Transfer to Line 4 (Yellow)
+- Uthman Bin Affan Road – Transfer to Line 4 (Yellow)
+- SABIC – Transfer to Line 4 (Yellow)
+- Granada
+- Al-Yarmuk
+- Al-Hamra – Transfer to Line 2 (Red)
+- Al-Andalus
+- Khurais Road
+- As-Salam
+- An Naseem – Transfer to Line 3 (Orange)
+
+**Note:** Several station names (e.g. SABB, STC, SABIC, Dr. Sulaiman Al-Habib) reflect corporate or institutional names. Riyadh's transport authority auctioned naming rights for 8 key stations to companies and banks, raising over one billion SAR. These sponsored names are used for the stations in lieu of traditional location-based names.
+
+## Station Directory & Amenities
+
+### Station Design
+
+**Station Infrastructure**
+All Riyadh Metro stations share a modern, unified architectural design and prioritize passenger comfort and safety. All stations are climate-controlled (air-conditioned) to cope with Riyadh's hot climate and are equipped with real-time passenger information displays. Stations offer free internet connectivity (Wi-Fi) and mobile network coverage inside. The four largest interchange stations – Qasr Al-Hukm, King Abdullah Financial District (KAFD) Station, Western Station, and STC Station – are designed as major hubs, featuring additional amenities such as retail shops, food outlets, ticket offices, and customer service centers. These key stations also have expansive layouts to handle high transfer volumes and were designed by renowned architects (for example, the KAFD Station was designed by Zaha Hadid Architects, with a striking futuristic design).
+
+**Accessibility**
+Stations were built to be fully accessible for passengers with disabilities. All station entrances have step-free access, and every station is outfitted with elevators and escalators to reach platforms. Tactile guidance paths (tactile paving) assist visually impaired travelers in navigating platforms and concourses. Additionally, train cars have dedicated spaces for wheelchairs. Overall, the metro's design meets international standards for accessibility, ensuring inclusive use by all passengers.
+
+**Park-and-Ride**
+To encourage public transport use, Riyadh Metro provides park-and-ride facilities at many stations. There are 19 dedicated parking sites across the network with capacities of 400–600 cars each. These parking lots are strategically located near stations (especially in suburban areas) so that commuters can park their cars and transfer to the metro easily. For example, Western Station and some terminus stations offer large parking areas. Stations are also integrated with feeder bus routes and local bus stops – several metro stations double as bus interchanges, allowing smooth transition between Riyadh's buses and the metro system.
+
+## KAFD Station Details
+
+KAFD Metro Station is a major interchange hub on the Riyadh Metro network, uniquely serving three lines – the Blue (Line 1), Yellow (Line 4), and Purple (Line 6) lines. Strategically located along King Fahd Road in Riyadh's financial district, this station links the city's central business area with outlying destinations like the airport. The station's award-winning design by Zaha Hadid Architects features an undulating, lattice-patterned façade inspired by desert sand dunes and traditional mashrabiya screens. Encompassing about 8,150 m² across multiple levels, KAFD Station stands out as an architectural landmark and a modern gateway to the King Abdullah Financial District.
+
+Opened to the public in late 2024, KAFD Station was built to be both functional and visually striking. It includes six rail tracks with six platforms on four levels, handling high passenger volumes while optimizing foot traffic flow. The station is fully integrated into the surrounding KAFD development via climate-controlled skybridges and pedestrian pathways, including a direct connection to the district's own monorail system (via a skybridge) that will further improve last-mile connectivity. As one of four main transfer stations in the network, KAFD Station enables easy interchange between metro lines and other transport modes, helping make travel in the city fast, seamless, and comfortable.
+
+**KAFD Nearby Services**
+Stepping outside the station (or using the connected walkways), you are in the heart of the King Abdullah Financial District – a modern development filled with offices, residences, and lifestyle destinations.
+
+**Features:**
+- **Plazas and Promenades:** Landscaping and seating, pedestrian-friendly design.
+- **Restaurants and Cafés:** Quick-service eateries to upscale dining. Examples include Black Tap Burgers, Urth Caffé, and other international restaurant chains.
+- **Shopping Centers and Retail Outlets:** At least one high-end shopping mall and various boutiques featuring luxury brands.
+- **Mosque:** Large grand mosque for prayers.
+- **Parks and Public Art Installations:** Designed as part of the district's lifestyle amenities.
+- **Entertainment Venues:** Included within the district's design.
+- **Hotels:** 4- and 5-star hotels for business travelers including Mövenpick, DoubleTree by Hilton, and Executives Hotel KAFD.
+
+KAFD is essentially a 'city within a city' known for its futuristic architecture and comprehensive services, offering amenities for meetings, dining, shopping, and leisure activities.
+
+## Ticketing & Operating Info
+
+### Ticketing and Fares
+
+**Fare Structure**
+Riyadh Metro uses a time-based ticket system with affordable flat fares that also cover bus travel (the metro and city buses are integrated on one ticket). The standard Single Ride (up to 2 hours) ticket costs SAR 4 (Saudi Riyals). In addition, there are longer-duration passes:
+
+- **3-Day Pass:** SAR 20 for unlimited travel over 3 days
+- **7-Day Pass:** SAR 40 for unlimited travel for a week
+- **30-Day (Monthly) Pass:** SAR 140 for 30 days
+
+These fares cover journeys on all metro lines and bus routes during the validity period (e.g. the 2-hour ticket or multi-day passes include unlimited transfers between metro lines and city buses). There is also a First Class (Gold) fare tier with more upscale seating; first-class tickets cost higher (e.g. SAR 10 for 2 hours, SAR 50 for 3 days, SAR 100 for 7 days, SAR 350 for 30 days). Children under the age of 6 ride for free (with an accompanying adult), and students are eligible for a 50% discount on fares (with student ID).
+
+**Ticket Purchase**
+Tickets are sold via the official "Darb" mobile app and at station ticket vending machines. The Darb App (available in English and Arabic) allows users to plan journeys, purchase digital tickets/passes, and generates a QR code for quick entry through fare gates. Alternatively, riders can buy a reusable Darb smart card for SAR 10 at station kiosks. The smart card can be topped up with credit and tapped at entry gates (it uses NFC contactless technology for quick fare collection). Metro stations have multiple automated ticket machines and staffed counters to accept payments (cash or card) for those who prefer on-site purchase. All stations are equipped with fare gates that read the QR codes or smart cards for entry/exit.
+
+### Operating Hours
+
+**Hours of Operation**
+The Riyadh Metro operates 7 days a week from 6:00 AM to 12:00 Midnight on all lines. Service starts early morning to accommodate commuters and runs until midnight for late-night travelers. These standard hours apply to all days, including weekends. (At present there are no overnight services past midnight.)
+
+**Train Frequency**
+Service frequency is high to minimize wait times. During peak commute hours, trains on core lines arrive roughly every 3–5 minutes. At off-peak times and Fridays, headways are a bit longer (typically 5 to 10 minutes between trains). The automated train control system allows for precise scheduling and high frequency. Each train typically consists of 2 to 4 carriages, and platforms are equipped with screen doors for safety. As ridership grows, the system can adjust frequencies to maintain efficient service. Real-time train arrival information is displayed at stations and can be tracked via the Darb app.
+
+## Travel Etiquette, Safety & Accessibility
+
+### Train Rules and Safety
+
+**Onboard and Station Safety**
+The metro system is built with stringent safety measures. All trains and stations are monitored by extensive CCTV surveillance networks for security. Stations are equipped with fire detection and suppression systems, and there are emergency alarms and communication units on platforms and inside trains. Tunnel segments have specialized ventilation and safety systems in case of any incidents. The Operations Control Center continuously monitors train movements and infrastructure, ensuring rapid response to any issue. Prior to launch, the trains and infrastructure underwent intensive testing, including stress-tests for Riyadh's harsh heat and sand conditions.
+
+**Passenger Guidelines**
+Riyadh Metro maintains certain class-segregation in trains to ensure comfort and cultural preferences. Each train is divided into three sections separated by glass partitions: **First Class**, **Family Class**, and **Standard Class**. Family Class carriages are reserved for women traveling alone or with children, and for groups of families/couples, providing a secure environment for those who prefer separation from single male riders. The First Class section offers premium seating and extra space for those with Gold tickets. The rest of the train is Standard class, open to all passengers. This arrangement, similar to other GCC metros, respects local customs while accommodating all rider categories. On platforms, clear signage and staff are present to guide passengers to the correct section. For general safety, rules such as no smoking, no eating on trains, and no unattended luggage are enforced. Security personnel and metro staff patrol stations and trains to assist passengers and maintain order.
+
+### Etiquette and Train Classes
+
+Trains in the Riyadh Metro are divided into three sections to accommodate different passenger groups. These sections are physically separated by glass partitions within each train set. The categories are:
+
+**Singles (Single Men):** This section is for solo male travelers. In Saudi public transit custom, single men are expected to use this section and not enter the family area.
+
+**Families:** This includes women traveling alone or with family, children, and mixed family groups. The Family section is reserved for these groups, and women traveling by themselves can choose this section for comfort.
+
+**First Class (VIP):** This section provides a premium experience with wider leather seats and more space. Only those who purchase First Class tickets or passes have access to this area.
+
+At KAFD Station and all other stations, signs on the platform indicate where to wait for each class (e.g., there will be markers for "Family Carriage" vs "Singles"). Likewise, inside the trains, there are clear labels and even frosted glass partitions to ensure separation. Make sure you board the correct section to respect local norms. The system is quite similar to Dubai's Metro and other Gulf transit systems in this regard. Overall, the trains are modern, clean, and fully air-conditioned (all cabins), with digital route maps and announcements in Arabic and English.
+
+### Accessibility Features
+
+Riyadh Metro stations and trains were designed with universal accessibility in mind. Stations like KAFD have numerous elevators, ramps, and tactile guidance paths for the visually impaired. There are priority seating areas on trains for the elderly, pregnant women, and disabled riders. If you require assistance, metro staff can provide wheelchairs at some main stations or help guide you to platforms. Station entrances often have curb cuts and easy drop-off zones. All restrooms have accessible stalls, and there are accommodations like Braille signage on some station signs and ticket machines. Service animals (for those who require them) would likely be allowed, but since this is uncommon in KSA, it's best to check with customer service. In short, the metro is user-friendly for travelers with mobility challenges, and one can navigate from street to train with minimal barriers.
+
+## Sports Venues and Football Teams
+
+### Football Teams and Stadiums
+
+**Al Hilal**
+- Stadium: Kingdom Arena
+- Capacity: 27,000 - 30,000
+- Nearest metro station: Granadia Station
+- Metro line: Granadia Line
+- Distance from nearest metro station: About 600m; 5-10 minute walk through pedestrian area
+
+**Al Nassr**
+- Stadium: Al-Awwal Park (also known as King Saud University Stadium; formerly known as Mrsool Park)
+- Capacity: 27,000
+- Nearest metro station: King Saud University Station
+- Metro line: Red Line
+- Distance from nearest metro station: About 1.5km; 20-25 minute walk, taxi/rideshare available
+
+**Al Hilal SFC**
+- Stadium: Kingdom Arena
+- Location: King Abdullah Sports City, Western Riyadh
+- Nearest metro station: King Abdullah Sports City Station
+- Metro line: Green Line
+- Distance from nearest metro station: Just a short walk (within 500m)
+
+**Al Shabab FC**
+- Stadium: Al Shabab Club Stadium
+- Location: As Sahafah, Riyadh 13321
+- Nearest metro station: Dr. Sulaiman Al-Habib Station
+- Metro line: Blue Line
+- Distance from nearest metro station: Just a short walk (within 500m)
+
+**Al Riyadh SC**
+- Stadium: Prince Turki bin Abdul Aziz Stadium
+- Location: Taiba Street, Riyadh 13751
+- Nearest metro station: No metro station within 2km
+- Distance from nearest metro station: Too far to walk comfortably - taxi, bus, or ride-share required (over 3km)
+
+**Prince Faisal bin Fahd Stadium**
+- Location: Al Ameen Abdullah Al Ali Al Naeem St, Riyadh 12836
+- Closest station: Al Malaz
+- Metro line: Orange Line
+- Note: Historically hosted Al Hilal, Al Nassr, and Al Shabab. These three teams will share Prince Mohammed bin Salman Stadium in 2029
+
+### Al-Nassr FC 2024-25 Season
+
+The 2024-25 season was Al-Nassr's 49th consecutive season in the top flight of Saudi football and 69th year in existence as a football club. The club participated in the Pro League, the King's Cup, the AFC Champions League Elite, and the Super Cup.
+
+**Season Overview:**
+- President: Ibrahim Al-Muhaidib (until 21 August), Abdullah Al-Majid (from 28 October)
+- Head coach: Luís Castro (until 17 September), Stefano Pioli (from 18 September)
+- Stadium: Al-Awwal Park
+- Pro League: 3rd place
+- King's Cup: Round of 16
+- AFC Champions League Elite: Semi-finals
+- Super Cup: Runners-up
+- Top goalscorer: League: Cristiano Ronaldo (25), All: Cristiano Ronaldo (35)
+- Highest home attendance: 25,490 vs Al-Hilal (1 November 2024, SPL)
+- Lowest home attendance: 5,889 vs Al-Khaleej (21 May 2025, SPL)
+- Average home league attendance: 16,292
+
+**Season Highlights:**
+- On 17 September, Al-Nassr terminated the contract of head coach Luís Castro following a slow start to the season
+- On 1 January 2025, Majid Al-Jam'an replaced Guido Fienga as the club's Executive Director with Fienga becoming the club advisor
+- Al-Nassr sold Seko Fofana in the winter window for €20,000,000 to the French side Rennes, making it the biggest sale outside the Saudi Pro League
+
+**Competition Results:**
+- Pro League: 34 matches, 21 wins, 7 draws, 6 losses, 80 goals for, 38 goals against, +42 goal difference, 61.76% win rate
+- King's Cup: 2 matches, 1 win, 0 draws, 1 loss, 2 goals for, 2 goals against, 50.00% win rate
+- Champions League Elite: 12 matches, 7 wins, 3 draws, 2 losses, 26 goals for, 10 goals against, +16 goal difference, 58.33% win rate
+- Super Cup: 2 matches, 1 win, 0 draws, 1 loss, 3 goals for, 4 goals against, -1 goal difference, 50.00% win rate
+- Total: 50 matches, 30 wins, 10 draws, 10 losses, 111 goals for, 54 goals against, +57 goal difference, 60.00% win rate
+
+**Final League Position:** 3rd place with 70 points (21 wins, 7 draws, 6 losses, 80 goals for, 38 goals against, +42 goal difference)
+
+## Summary
+
+Overall, the Riyadh Metro is a state-of-the-art transit system combining modern technology, passenger comfort, and cultural considerations. It has rapidly become an integral part of moving around Riyadh, offering residents and visitors a fast, safe, and convenient way to navigate the city. With its comprehensive network of lines and stations, connections to key city landmarks (from King Khalid International Airport and major universities to markets, museums, and financial districts), and integration with buses and park-and-ride facilities, the metro is transforming public transportation in Saudi Arabia's capital.
+
+**Sources:** Riyadh Metro official project overview; Royal Commission for Riyadh City (RCRC) reports; Riyadh Metro information portals; Al Nakhla Riyadh Metro guide (2025); Condé Nast Traveler – Riyadh Metro guide; Zaha Hadid Architects press release on KAFD Station; and Wikipedia – Riyadh Metro & Lines.

@@ -1,0 +1,107 @@
+[
+    {
+      "ticketing_and_fares": {
+        "fare_structure": {
+          "currency": "SAR",
+          "ticket_types": {
+            "standard": {
+              "single_ride": {
+                "duration": "2 hours",
+                "price": 4,
+                "description": "Unlimited travel on all metro lines and buses for 2 hours"
+              },
+              "3_day_pass": {
+                "duration": "3 days",
+                "price": 20,
+                "description": "Unlimited travel for 3 consecutive days"
+              },
+              "7_day_pass": {
+                "duration": "7 days",
+                "price": 40,
+                "description": "Unlimited travel for 1 week"
+              },
+              "30_day_pass": {
+                "duration": "30 days",
+                "price": 140,
+                "description": "Unlimited travel for 30 days (monthly pass)"
+              }
+            },
+            "first_class": {
+              "single_ride": {
+                "duration": "2 hours",
+                "price": 10,
+                "description": "First Class (Gold) seating with upscale amenities for 2 hours"
+              },
+              "3_day_pass": {
+                "duration": "3 days",
+                "price": 50,
+                "description": "First Class unlimited travel for 3 consecutive days"
+              },
+              "7_day_pass": {
+                "duration": "7 days",
+                "price": 100,
+                "description": "First Class unlimited travel for 1 week"
+              },
+              "30_day_pass": {
+                "duration": "30 days",
+                "price": 350,
+                "description": "First Class unlimited travel for 30 days"
+              }
+            }
+          },
+          "discounts": {
+            "children": {
+              "age_limit": "under 6 years",
+              "discount": "100%",
+              "conditions": "Must be accompanied by adult"
+            },
+            "students": {
+              "discount": "50%",
+              "conditions": "Valid student ID required"
+            }
+          },
+          "payment_methods": {
+            "darb_app": {
+              "name": "Darb Mobile App",
+              "languages": ["English", "Arabic"],
+              "features": ["Journey planning", "Digital ticket purchase", "QR code generation"],
+              "entry_method": "QR code scan at fare gates"
+            },
+            "darb_smart_card": {
+              "name": "Darb Smart Card",
+              "initial_cost": 10,
+              "technology": "NFC contactless",
+              "features": ["Reusable", "Top-up with credit", "Tap entry/exit"],
+              "purchase_location": "Station kiosks"
+            },
+            "station_purchase": {
+              "locations": ["Automated ticket machines", "Staffed counters"],
+              "payment_accepted": ["Cash", "Card"]
+            }
+          },
+          "coverage": {
+            "included_services": ["All metro lines", "City buses"],
+            "transfer_policy": "Unlimited transfers during validity period"
+          }
+        },
+        "fare_notes": "Riyadh Metro uses a time-based ticket system with affordable flat fares that also cover bus travel (the metro and city buses are integrated on one ticket)."
+      }
+    },
+    {
+      "operating_hours": {
+        "hours_of_operation": {
+          "days": "7 days a week",
+          "start_time": "6:00 AM",
+          "end_time": "12:00 Midnight",
+          "note": "Applies to all days including weekends; no overnight services past midnight."
+        },
+        "train_frequency": {
+          "peak_hours": "Every 3–5 minutes",
+          "off_peak": "Every 5–10 minutes",
+          "friday": "Every 5–10 minutes",
+          "train_config": "2 to 4 carriages per train",
+          "features": ["Automated train control system", "Platform screen doors", "Real-time arrival info via Darb app"]
+        }
+      }
+    }
+  ]

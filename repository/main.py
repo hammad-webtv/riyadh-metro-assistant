@@ -6,7 +6,7 @@ from pydantic import BaseModel
 from fastapi.responses import HTMLResponse
 import json
 import logging
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 
 from modules.engine import get_bot
 from modules.utils import index_all_metro_data
@@ -26,7 +26,6 @@ app.add_middleware(
 
 try:
     load_dotenv()
-    # Global bot instance
     bot = get_bot()
 except Exception as e:
     raise e
@@ -48,13 +47,11 @@ async def read_root():
 
 @app.post("/chat")
 async def chat(request: ChatRequest):
-    """
-    Main chat endpoint that routes between knowledge base and metro directions
-    """
+    """Main chat endpoint"""
     try:
         logger.info(f"Processing user query for thread_id: {request.userid}")
         
-        # Process the query using the new LangGraph tools
+        # Process the query
         response = bot.process_query(request.question)
         
         # Parse the response to extract JSON data if present
@@ -64,16 +61,13 @@ async def chat(request: ChatRequest):
         # Check if response contains JSON data
         if "JSON:" in response:
             try:
-                # Split the response to get the JSON part
                 parts = response.split("JSON:")
                 chatbot_answer = parts[0].strip()
                 json_string = parts[1].strip()
                 
-                # Parse the JSON
                 product_data = json.loads(json_string)
                 
-                # Check if this is an amenities query or other type of query
-                # Only return amenities data for specific amenity-related queries
+                # Check if this is an amenities query
                 query_lower = request.question.lower()
                 amenity_keywords = [
                     "restaurant", "cafe", "shop", "store", "mall", "mosque", "park",
@@ -98,64 +92,80 @@ async def chat(request: ChatRequest):
         
     except Exception as e:
         logger.error(f"Error processing chat request: {e}", exc_info=True)
-        raise HTTPException(status_code=500, detail=f"Internal server error: {str(e)}")
-
-@app.post("/push_to_vdb")
-def push_data(data_path: str = "./data/pharmacy_products.json"):
-    """
-    Triggers the process to load and embed data into the Chroma VDB.
-    Accepts an optional 'data_path' as a query parameter.
-    """    
-    if not os.path.exists(data_path):
-        raise HTTPException(status_code=404, detail=f"Data file '{data_path}' not found on the server.")
-    
-    try:
-        # Pass the 'data_path' variable to your function
-        # The original push_to_chroma function is removed, so this part is commented out or removed if not needed.
-        # For now, keeping it as is, but it will cause an error if push_to_chroma is not defined.
-        # Assuming push_to_chroma is no longer needed or will be re-added elsewhere.
-        # push_to_chroma(json_data_path=data_path) 
-        return {"message": f"Data from '{data_path}' pushed to VDB successfully"}
-    
-    except Exception as e:
-        # The exception from your module will be caught and returned as a 500 error
-        raise HTTPException(status_code=500, detail=f"Failed to push data: {str(e)}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/index_all_data")
-def index_all_data():
-    """
-    Index all metro-related data files into the vector database.
-    This will create multiple collections for different types of data.
-    """
+async def index_data():
+    """Index all data files"""
     try:
         index_all_metro_data()
         return {
             "message": "All metro data indexed successfully",
-            "collections_created": [
-                "pharmacy_products",
-                "metro_rules",
-                "sports_venues",
-                "sports_content",
-                "ticketing",
-                "amenities"
-            ]
+            "collections_created": ["metro_rules", "amenities"]
         }
     except Exception as e:
-        raise HTTPException(status_code=500, detail=f"Failed to index all data: {str(e)}")
-
-@app.get("/get_chat_history/{userid}")
-def get_chat_history(userid: str):
-    """
-    """
-    # The original assistant.graph.get_state is removed, so this part is commented out or removed.
-    # Assuming the functionality is no longer available or will be re-added elsewhere.
-    # For now, returning a placeholder error.
-    return {"status": "error", "message": "Chat history retrieval is currently unavailable."}
+        logger.error(f"Error indexing data: {e}")
+        raise HTTPException(status_code=500, detail=str(e))
 
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
-    return {"status": "healthy", "service": "Riyadh Metro Assistant"}
+    return {
+        "status": "healthy",
+        "service": "Riyadh Metro Assistant"
+    }
+
+@app.post("/debug_search")
+async def debug_search(request: ChatRequest):
+    """Debug endpoint to see what's being retrieved"""
+    try:
+        from modules.tools import MetroSearchEngine
+        
+        search_engine = MetroSearchEngine(persist_directory="./chromadb")
+        logger.info(f"Debug search: Created search engine for query: {request.question}")
+        
+        results = search_engine.query_search_docs(request.question, num_retrievals=5)
+        logger.info(f"Debug search: Got {len(results)} results")
+        
+        return {
+            "query": request.question,
+            "num_results": len(results),
+            "results": results[:3]  # Return first 3 results
+        }
+    except Exception as e:
+        logger.error(f"Error in debug search: {e}", exc_info=True)
+        return {
+            "error": str(e),
+            "query": request.question,
+            "results": []
+        }
+
+@app.get("/debug_collections")
+async def debug_collections():
+    """Debug endpoint to check what collections exist and their sizes"""
+    try:
+        import chromadb
+        client = chromadb.PersistentClient(path="./chromadb")
+        collections = client.list_collections()
+        
+        collection_info = []
+        for collection in collections:
+            count = collection.count()
+            collection_info.append({
+                "name": collection.name,
+                "count": count
+            })
+        
+        return {
+            "collections": collection_info,
+            "total_collections": len(collections)
+        }
+    except Exception as e:
+        logger.error(f"Error in debug collections: {e}")
+        return {
+            "error": str(e),
+            "collections": []
+        }
 
 if __name__ == "__main__":
     import uvicorn

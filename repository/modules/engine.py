@@ -215,14 +215,34 @@ Destination:"""
                         context += f"Step {i}: {step.get('instruction', 'N/A')}\n"
                     
                     state.context = context
+                    
+                    # Generate map_list for frontend
+                    from datetime import datetime
+                    map_list = []
+                    route_info = {
+                        "type": "metro_route",
+                        "summary": route_data.get('summary', ''),
+                        "duration": route_data.get('duration', ''),
+                        "distance": route_data.get('distance', ''),
+                        "steps": route_data.get('steps', []),
+                        "origin": route_data.get('origin', 'KAFD Metro Station Riyadh'),
+                        "destination": route_data.get('destination', destination),
+                        "timestamp": datetime.now().isoformat()
+                    }
+                    map_list.append(route_info)
+                    state.tool_results["map_list"] = map_list
+                    
                 else:
                     state.context = result.get('suggestion', 'No route information available.')
+                    state.tool_results["map_list"] = []
                 
             except Exception as e:
                 logger.error(f"Error in metro route tool: {e}")
                 state.context = "I encountered an error while getting route information. Please try asking about metro rules or amenities instead."
+                state.tool_results["map_list"] = []
         else:
             state.context = "I couldn't determine the destination. Please specify where you want to go from KAFD Metro Station."
+            state.tool_results["map_list"] = []
         
         step2_time = time.time() - step2_start
         logger.info(f"Step 2: Metro route tool completed in {step2_time:.2f}s")
@@ -309,8 +329,8 @@ Destination:"""
         
         return state
     
-    def process_query(self, user_query: str) -> str:
-        """Process a user query and return the response"""
+    def process_query(self, user_query: str) -> dict:
+        """Process a user query and return the response with additional data"""
         start_time = time.time()
         logger.info(f"=== Starting LLM-based query processing for: {user_query[:50]}... ===")
         
@@ -327,17 +347,25 @@ Destination:"""
             # Get the final answer - handle both dict and object results
             if isinstance(result, dict):
                 final_answer = result.get("final_answer", "I'm sorry, I encountered an error while processing your request. Please try again.")
+                map_list = result.get("tool_results", {}).get("map_list", [])
             else:
                 final_answer = result.final_answer
+                map_list = getattr(result, 'tool_results', {}).get("map_list", [])
             
             total_time = time.time() - start_time
             logger.info(f"=== Total LLM-based query processing time: {total_time:.2f}s ===")
             
-            return final_answer
+            return {
+                "answer": final_answer,
+                "map_list": map_list
+            }
             
         except Exception as e:
             logger.error(f"Error in process_query: {e}", exc_info=True)
-            return "I'm sorry, I encountered an error while processing your request. Please try again."
+            return {
+                "answer": "I'm sorry, I encountered an error while processing your request. Please try again.",
+                "map_list": []
+            }
 
 # Global bot instance
 _global_bot = None

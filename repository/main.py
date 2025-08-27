@@ -52,7 +52,11 @@ async def chat(request: ChatRequest):
         logger.info(f"Processing user query for thread_id: {request.userid}")
         
         # Process the query
-        response = bot.process_query(request.question)
+        response_data = bot.process_query(request.question)
+        
+        # Extract the response and map_list
+        response = response_data.get("answer", "I'm sorry, I encountered an error while processing your request. Please try again.")
+        map_data = response_data.get("map_list", [])
         
         # Parse the response to extract JSON data if present
         chatbot_answer = response
@@ -87,7 +91,8 @@ async def chat(request: ChatRequest):
         
         return {
             "chatbot_answer": chatbot_answer,
-            "products": product_data
+            "products": product_data,
+            "map_list": map_data
         }
         
     except Exception as e:

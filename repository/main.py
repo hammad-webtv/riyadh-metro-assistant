@@ -126,7 +126,7 @@ async def debug_search(request: ChatRequest):
     try:
         from modules.tools import MetroSearchEngine
         
-        search_engine = MetroSearchEngine(persist_directory="./chromadb")
+        search_engine = MetroSearchEngine(persist_directory="../repository/chromadb")
         logger.info(f"Debug search: Created search engine for query: {request.question}")
         
         results = search_engine.query_search_docs(request.question, num_retrievals=5)
@@ -135,7 +135,7 @@ async def debug_search(request: ChatRequest):
         return {
             "query": request.question,
             "num_results": len(results),
-            "results": results[:3]  # Return first 3 results
+            "results": results[:10]  # Return first 10 results to see both collections
         }
     except Exception as e:
         logger.error(f"Error in debug search: {e}", exc_info=True)
@@ -150,7 +150,7 @@ async def debug_collections():
     """Debug endpoint to check what collections exist and their sizes"""
     try:
         import chromadb
-        client = chromadb.PersistentClient(path="./chromadb")
+        client = chromadb.PersistentClient(path="../repository/chromadb")
         collections = client.list_collections()
         
         collection_info = []

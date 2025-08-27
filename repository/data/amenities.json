@@ -1,618 +1,1441 @@
 [
-    {
-        "title": "Spaces Riyadh KAFD",
-        "description": "A modern co-working space offering flexible office solutions with 24/7 access, high-speed internet, and professional amenities.",
-        "rating": "3.8",
-        "review": "Great environment for startups.",
-        "Distance": "2.3KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "The Executive Centre – KAFD 3.09",
-        "description": "Premium flexible office spaces with modern amenities, meeting rooms, and a professional environment tailored for businesses of all sizes.",
-        "rating": "4.7",
-        "review": "Top-notch facilities and services.",
-        "Distance": "1.5KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "SPIC Laundry",
-        "description": "Saudi Arabia's first non-toxic laundry service, offering eco-friendly dry cleaning and laundry solutions with free pickup and delivery.",
-        "rating": "4.7",
-        "review": "Clothes returned fresh and neatly folded.",
-        "Distance": "20.5KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Carely Laundry Service",
-        "description": "On-demand laundry and dry cleaning services with quick turnaround times and convenient pickup and delivery.",
-        "rating": "4.6",
-        "review": "Fast and reliable service.",
-        "Distance": "10.9KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Masar Laundry Co.",
-        "description": "Professional laundry and dry cleaning services with a commitment to quality and customer satisfaction.",
-        "rating": "4.3",
-        "review": "Prompt and efficient service.",
-        "Distance": "12.8KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Lasuran Spa & Barbershop",
-        "description": "A luxury spa and grooming center offering a range of services including massages, haircuts, and skincare treatments.",
-        "rating": "4.8",
-        "review": "Exceptional service and ambiance.",
-        "Distance": "1.1KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Groom Barbershop",
-        "description": "A modern barbershop specializing in men's haircuts and grooming services with a focus on quality and customer satisfaction.",
-        "rating": "4.5",
-        "review": "Skilled barbers and great service.",
-        "Distance": "13.1KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Chaps & Co Barbershop",
-        "description": "A premium men's grooming salon offering haircuts, beard trims, and other grooming services in a stylish setting.",
-        "rating": "4.7",
-        "review": "Excellent service and ambiance.",
-        "Distance": "17.5KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "EVIQ Charging Station",
-        "description": "Electric vehicle charging station offering fast and reliable charging services for EV owners.",
-        "rating": "4.4",
-        "review": "Convenient location for charging.",
-        "Distance": "9.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "E-FILL DC Charging Station",
-        "description": "A publicly accessible electric vehicle (EV) charging station offering fast and reliable charging services.",
-        "rating": "4.5",
-        "review": "Easy to locate and use.",
-        "Distance": "13.5KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "KIMSHEALTH Medical Center",
-        "description": "A multispecialty clinic offering dermatology, ENT, pediatrics, orthodontics, and more.",
-        "rating": "4.5",
-        "review": "Staff are very friendly and helpful.",
-        "Distance": "29.4KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "The Clinics",
-        "description": "A premier day-surgery, aesthetic, and medical center offering a wide range of procedures.",
-        "rating": "4.2",
-        "review": "Excellent service and professional staff.",
-        "Distance": "12.9KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Care Medical Hospital",
-        "description": "A 268-bed hospital with emergency services, outpatient clinics, and various specialties.",
-        "rating": "4.3",
-        "review": "Supportive team and good work culture.",
-        "Distance": "27.5KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Dr. Soliman Fakeeh Hospital",
-        "description": "A leading healthcare institution providing comprehensive medical services.",
-        "rating": "4.1",
-        "review": "Distinguished and skilled medical staff.",
-        "Distance": "12.4KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Saudi Post - King Abdullah Road",
-        "description": "A post office offering mailing and other postal services.",
-        "rating": "4",
-        "review": "Efficient mailing services.",
-        "Distance": "935KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Saudi Post - Olaya",
-        "description": "A post office providing standard postal services.",
-        "rating": "4",
-        "review": "Quick and efficient service.",
-        "Distance": "16.7KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Al Hayathim Police Station",
-        "description": "A police station serving the Al Hayathim area.",
-        "rating": "4.2",
-        "review": "Responsive and professional officers.",
-        "Distance": "108KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Annahdah Police Station",
-        "description": "A police station serving the Annahdah district.",
-        "rating": "4.2",
-        "review": "Professional and courteous officers.",
-        "Distance": "116KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "King Khalid International Airport Immigration",
-        "description": "Immigration counters located in designated areas for arrivals and departures.",
-        "rating": "4.3",
-        "review": "Efficient processing of passengers.",
-        "Distance": "35.3KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "King Abdullah Park",
-        "description": "A sprawling urban park featuring expansive green spaces, a lake, musical fountains, and family zones.",
-        "rating": "4.5",
-        "review": "Beautiful park with musical fountains and picnic spots.",
-        "Distance": "22.6KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Al-Watan Park",
-        "description": "A park surrounding Riyadh Water Tower, featuring water canals, mini waterfalls, and a peninsula-shaped design.",
-        "rating": "4.4",
-        "review": "Unique design with Arabian Peninsula model.",
-        "Distance": "19.8KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Murabba Historical Palace",
-        "description": "Municipal parkland surrounding the National Museum with gardens, shaded paths, and historic backdrops.",
-        "rating": "4.6",
-        "review": "Beautifully landscaped and peaceful.",
-        "Distance": "20.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Salam Park",
-        "description": "A large urban park with central lake, walking paths, playgrounds, and boat rides.",
-        "rating": "4.7",
-        "review": "Perfect for family outings.",
-        "Distance": "22.5KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Riyadh Zoo",
-        "description": "Zoo with a wide range of animals, educational displays, and kids’ zones, ideal for families.",
-        "rating": "4.3",
-        "review": "Lots of animals and good signage.",
-        "Distance": "23.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Al Fouta Park",
-        "description": "A historic park known for its lush greenery, shaded areas, and traditional design, offering a peaceful retreat in the city.",
-        "rating": "4.2",
-        "review": "A serene spot with beautiful landscaping.",
-        "Distance": "20.2KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Wadi Hanifa Park",
-        "description": "A natural valley offering scenic views, walking trails, and picnic spots, stretching over 120 km through Riyadh.",
-        "rating": "4.6",
-        "review": "Great for nature walks and photography.",
-        "Distance": "34.6KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Al Nakheel Park",
-        "description": "A serene park featuring palm trees, children's playgrounds, and walking paths, ideal for family outings.",
-        "rating": "4.4",
-        "review": "Quiet and clean environment.",
-        "Distance": "989KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Al Nahda Park",
-        "description": "A neighborhood park featuring playgrounds, sports fields, and shaded seating areas, catering to local residents.",
-        "rating": "4.3",
-        "review": "Convenient location for residents.",
-        "Distance": "21.5KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Al Rawda Park",
-        "description": "A community park offering green spaces, children's play areas, and walking tracks, popular among locals for daily recreation.",
-        "rating": "4.2",
-        "review": "Ideal for family gatherings.",
-        "Distance": "26.3KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "KAFD Grand Mosque",
-        "description": "The KAFD Grand Mosque is a Friday mosque in the al-Aqeeq neighborhood of Riyadh, Saudi Arabia, located within the King Abdullah Financial District. Built in 2017, the 6,103-square-metre (65,690 sq ft) structure sits on a large urban plaza that functions as a public space and, when needed, outdoor prayer area. Inside, the column-free space can accommodate 1,500 prayer spaces over two levels — a large central hall and a mezzanine.Designed by the Riyadh-based architecture and engineering firm Omrania and Associates, the mosque is inspired by the form of the desert rose.",
-        "rating": "4.8",
-        "review": "The King Abdullah Grand Mosque in KFD has an incredible design, brother. The entire mosque doesn’t have a single pillar inside, which is remarkable. It's such a beautiful mosque with an excellent architectural design that once you visit, you’ll be mesmerized just looking at it. It’s truly amazing and so beautiful. I felt really good to see it, and I had the opportunity to pray Jumu’ah there. It’s simply outstanding and worthy of praise—a truly amazing mosque!",
-        "Distance": "1.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "muvi Cinemas",
-        "description": "Get ready to immerse yourself in a unique cinematic experience with muvi Cinemas. Browse latest movies, showtimes, and our experiences. Book your tickets now.",
-        "rating": "4.1",
-        "review": "I experienced the suites, and it was brilliant. The lobby has a comfortable seating area. The cinema comes with  adjustable seats, individual gentle lights, and a tray for convenience. We ordered using the QR code, and our food was promptly delivered right to our seats. The staff were exceptional, providing 5-star service.",
-        "Distance": "6.7KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Al Masmak Fortress",
-        "description": "A 19th-century mud-brick fort pivotal in Saudi Arabia's unification. Weapons, uniforms & exhibits on the kingdom's history, set in a clay & mud-brick fortress from 1865.",
-        "rating": "4.5",
-        "review": "Well maintained castle that displays an important part of history in the Saudi Arabia. It took us around one and a half hours to complete the tour and it was enjoyable for the family.",
-        "Distance": "19.9KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "National Museum of Saudi Arabia",
-        "description": "Comprehensive museum showcasing Saudi Arabia's history and culture. Restored former palace with a library, art gallery, cultural exhibits & a large garden.",
-        "rating": "4.5",
-        "review": "I'm glad to visit there, it is such a fantastic historical place where you can see the beauty of Islamic history and revolution. The entry is free, no need to worry about tickets. I highly recommend visiting this place. It is close to the National Museum metro station.",
-        "Distance": "19.7KM",
-        "Walkable": "No"
-    },
-    {
-        "title": " King Abdulaziz Historical Center",
-        "description": "A cultural complex housing museums and parks, celebrating Saudi heritage.",
-        "rating": "4.7",
-        "review": "I recently visited the King Abdul Aziz Historical Museum during the Noor Festival, and it was a beautiful experience. The museum was not very crowded, which made it a perfect place to relax and enjoy the exhibits at my own pace. The atmosphere was serene, allowing me to take in the rich history and culture of Saudi Arabia without feeling rushed.",
-        "Distance": "20.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "King Fahad Cultural Center",
-        "description": "A premier cultural venue in Riyadh, featuring a 2,750-seat auditorium, exhibition halls, and spaces for performances and workshops. The center blends traditional Najdi architectural elements with modern design, hosting a variety of cultural events including concerts, plays, art exhibitions, and conferences.",
-        "rating": "4.5",
-        "review": "Visited this place to watch the Saudi National Orchestra for the Saudi Founding Day! The whole journey there was seamlessly organized, and the waiting time for the performance passed easily while we relaxed in the outdoor garden of the Centre. The interior was on a whole new level; the charming architecture of the space was beautifully complemented by the traditional stands that instilled a sense of Saudi culture. And the auditorium hall where the performance was held catered for the large number of spectators with no flaws. Definitely a place to be visited by those passionate for art, music, and architecture!",
-        "Distance": "22.8KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Al Rajhi Grand Mosque",
-        "description": "One of Riyadh's largest mosques, accommodating up to 20,000 worshippers. Features Moorish Revival architecture, libraries, and grand domes.",
-        "rating": "4.7",
-        "review": "The mosque is spacious, accommodating thousands of worshippers, and its gardens are beautiful.",
-        "Distance": "29.8KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Imam Turki Bin Abdullah Grand Mosque",
-        "description": "A historic mosque with brown Arriyadh limestone exterior and white marble interior, accommodating up to 17,000 worshippers.",
-        "rating": "4.6",
-        "review": "This is a large mosque and is quite attractive and in good condition.",
-        "Distance": "20.9KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Diriyah (At-Turaif District)",
-        "description": "A UNESCO World Heritage Site and original home of the Saudi royal family with preserved Najdi-style mud-brick structures.",
-        "rating": "4.8",
-        "review": "A superb place to spend a few hours in Riyadh.",
-        "Distance": "10.1KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Fairmont Riyadh",
-        "description": "In a business district, this high-end hotel is 7 km from the Riyadh Front shopping area and 22 km from King Khalid International Airport.",
-        "rating": "4.7",
-        "review": "I recently dined at their in house Restaurant ‘The 365’ during their Saturday themed buffet night, and it was an outstanding experience from start to finish. The theme was Japanese, and the variety and quality of the food were exceptional. From seafood to meats and international favorites, every dish was full of flavor and beautifully presented.",
-        "Distance": "16.2KM ",
-        "Walkable": "No"
-    },
-    {
-        "title": "Hilton Riyadh Hotel & Residences",
-        "description": "Set in a modern complex, this posh hotel is next to the upscale Granada Mall. It's 20 km from Al Bujairi Heritage Park and 24 km from King Khalid International Airport.",
-        "rating": "4.5",
-        "review": "We have a meeting in Hilton Hotel right now. The hotel itself is big and elegant. We cannot almost find our meeting room. Luckily, Ms. Danica saw us and assisted us with a great smile. She is very welcoming and accommodating. Also, to Yasmen for helping us in the business center. The food was also delicious! The event is doing really well with the help of the very good staffs. Good job to all.",
-        "Distance": "16.3KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Mövenpick Hotel and Residences Riyadh",
-        "description": "Off a busy highway, this upscale hotel is 3 km from the King Abdullah Financial District and 31 km from King Khalid International Airport.",
-        "rating": "4.8",
-        "review": "I had the pleasure of being served by Umar Rashid during my stay at Movenpick Riyadh, and I must say, his courteous and professional demeanor truly elevated my experience. From the moment we were seated, he made us feel welcome and valued. His attention to detail, warm attitude, and genuine desire to ensure our comfort did not go unnoticed. He anticipated our needs with grace, offered thoughtful recommendations, and handled every interaction with a smile.",
-        "Distance": "6.3KM ",
-        "Walkable": "No"
-    },
-    {
-        "title": "Hilton Garden Inn Riyadh Financial District",
-        "description": "A contemporary hotel offering comfortable accommodations, a restaurant, and proximity to the KAFD Metro Station. Set in a commercial district along the Northern Ring Road, this polished hotel is 6 km from the King Abdullah Financial District and 8 km from King Saud University.",
-        "rating": "4.4",
-        "review": "I had a very comfortable and pleasant stay at the hotel, and everything went smoothly right from the start. After a long flight, the check-in process was quick and hassle-free, which was a big relief. I was warmly welcomed, and the room boy, Sitesh, kindly helped me with my luggage — a thoughtful gesture I truly appreciated.",
-        "Distance": "6.0KM ",
-        "Walkable": "No"
-    },
-    {
-        "title": "Courtyard by Marriott Riyadh Northern Ring Road",
-        "description": "A modern hotel featuring spacious rooms, a fitness center, and dining options, situated near the Northern Ring Road.",
-        "rating": "4.3",
-        "review": "I had a wonderful experience at the Marriott hotel, especially due to its remarkable courtyard that creates a serene atmosphere. ",
-        "Distance": "7.3KM ",
-        "Walkable": "No"
-    },
-    {
-        "title": "Mansard Riyadh, A Radisson Collection Hotel",
-        "description": "A luxury hotel offering elegant rooms, fine dining, and premium services, situated close to KAFD. Set in the residential Ar Rabiour district, this refined hotel in a grand building is 3 km from Riyadh Park mall, 9 km from the Historic Ad Diriyah and 17 km from the King Abdullah Financial District. King Khalid International Airport is 27 km away.",
-        "rating": "4.7",
-        "review": "The hotel staffs were incredibly helpful and professional.  The hospitality was tremendously amazing.  They went above and beyond to make sure we erected comfortable. ",
-        "Distance": "6.5KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Executives Hotel - KAFD",
-        "description": "A 4-star hotel located in the heart of Riyadh, offering easy access to several public transport stations, making it a convenient choice for both business and leisure travelers.Across the road from the King Abdullah Financial District, this sleek hotel with a mirrored-glass facade is 10 km from downtown Riyadh and 34 km from King Khalid International Airport.",
-        "rating": "4.1",
-        "review": "I had an amazing experience here!. The front desk team was incredibly helpful and friendly, making everything smooth from check-in to check-out.The sauna was clean, relaxing, and high quality—a perfect way to unwind.Overall, a fantastic stay with great service. I’ll definitely come back!",
-        "Distance": "4.6KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "DoubleTree by Hilton Riyadh Financial District Hotel & Suites",
-        "description": "A contemporary hotel offering suites and rooms with various amenities, located near the KAFD area. Set off the Northern Ring Road, this upscale all-suite hotel is 6 km from the King Abdullah Financial District and 9 km from King Saud University.",
-        "rating": "4.6",
-        "review": "Excellent service and personal care from each member of the staff. They make you feel at home truly and the cleanliness and space of the rooms is very comforting. ",
-        "Distance": "6.1KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Grand Plaza Hotel - KAFD Riyadh",
-        "description": "A hotel situated in the heart of Riyadh's prestigious King Abdullah Financial District, offering convenient access to public transport stations. Off a main highway, this polished hotel is 6 km from the Museum of Illusions and 8 km from Riyadh Gallery Mall. King Khalid International Airport is 30 km away.Warmly decorated rooms feature Wi-Fi and TVs, as well as minifridges, kettles and safes. Suites add balconies and/or sitting areas. Room service is available 24/7.Amenities include a restaurant, a bar/lounge and a rooftop pool, plus meeting and event space. Parking, airport shuttle service and halal breakfast are available.",
-        "rating": "4",
-        "review": "The exceptional customer service at this hotel impressed me. They were always attintive in everything you request. And they are friendly staff. The hotel was beautiful,with a clean and comfortable rooms. It was even beyter than expected.",
-        "Distance": "11.3KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Novotel Riyadh Al Anoud",
-        "description": "A 4-star hotel located a short distance away from the KAFD Metro Station, providing modern accommodations and amenities. Set in a contemporary skyscraper on a main thoroughfare, this upscale hotel is a 6-minute walk from shopping at Kingdom Tower and 2 km from Al Faisaliyah Centre.",
-        "rating": "4.2",
-        "review": "Excellent renovation of this hotel, which I am delighted to return to. |The rooms, the hotel, the gym and the indoor swimming pool are all perfect. |The rooms are now of the very top Novotel standard, modern and very comfortable.",
-        "Distance": "14.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Enterprise Rent-A-Car – King Fahd Road Branch",
-        "description": "Enterprise Rent-A-Car offers a wide range of vehicles for rent, catering to various customer needs.",
-        "rating": "3.3",
-        "review": "Great service.  Very friendly people and pleased with the car and price.  We dealt with Abdullah Al Kaabi who was very professional and went beyond what you would normally expect.  I would recommend this branch to anyone.",
-        "Distance": "10.2KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Hertz Car Rental – Al Degheijer Building",
-        "description": "Hertz offers a variety of rental vehicles, known for its global presence and quality service.",
-        "rating": "3.5",
-        "review": "Excellent service and cooperation, I highly recommend them. Nice clean cars and almost the best price and service in the market. Ask for Abdullah and definitely you'll be more than happy with their service",
-        "Distance": "22.7KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Budget Rent a Car – King Abdul Aziz Road Branch",
-        "description": "Budget offers affordable car rental options with a variety of vehicles to choose from.",
-        "rating": "4.1",
-        "review": "Special thanks for Mohammad Alghamdi, was truly swift and extremely helpful.",
-        "Distance": "8.1KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Splendor Road Rental a Car – Prince Mamdouh Bin Abdulaziz Street",
-        "description": "Splendor Road is a Saudi Arabian car rental company established in 2018, committed to delivering high-quality rental services with distinctive features. It aims to contribute to Saudi Arabia's Vision 2030 by enhancing the travel experience for citizens, residents, and tourists alike. The company prides itself on innovating unique customer service experiences and seeks to elevate the efficiency and quality of services for its corporate partners.",
-        "rating": "4.6",
-        "review": "MashaaAllah Mr. AbdulRehman was very polite and friendly. He give me the best rate for Hyundai Staria brand new car. Extremely satisfied with the service. No hidden charges, no issue in trip. The best part they offer open kms with some additional price unlike other shops nearby. Highly recommended. InshaAllah if i plan to go for umrah so i will go with them.",
-        "Distance": "16.8KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Riyadh Bus Stop – Al Murooj District",
-        "description": "Located in the Al Murooj District, this bus stop offers access to various bus routes for commuters in the area.",
-        "rating": "4",
-        "review": "Bus times are very precise",
-        "Distance": "5.6KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "SIXT Rent a Car – Riyadh Al Malaz Train Station",
-        "description": "SIXT offers a wide range of vehicles for rent, including luxury models, with flexible booking options and excellent customer service.",
-        "rating": "4.1",
-        "review": "This is my second time with them and it’s easy methods and clean cars and special thanks to Mr. Hussain for his warm welcoming and helpful words",
-        "Distance": "25.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Kingdom Tower Bus Stop",
-        "description": "This bus stop serves SAPTCO’s lines, providing public transportation options for commuters near the Kingdom Tower.",
-        "rating": "4.5",
-        "review": "Easy access to buses and clean facilities",
-        "Distance": "14.8KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Key Car Rental",
-        "description": "Key Car Rental is a prominent Saudi car rental company with over 50 branches across the Kingdom, offering a wide range of vehicles to cater to various customer needs.",
-        "rating": "3.9",
-        "review": "Great company, they will look after you, zero hassle,  A lil pricey compared to others but nicer cars.",
-        "Distance": "8.6KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "SAPTCO Bus Stop – Al Murooj District",
-        "description": "This SAPTCO bus stop in the Al Murooj District provides access to various bus routes, facilitating convenient public transportation for commuters in the area.",
-        "rating": "4.7",
-        "review": "Mashallah, high quality services",
-        "Distance": "10.1KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Jones the Grocer – KAFD",
-        "description": "Originally started in 1996 in Australia, Jones the Grocer was a passionate project derived from a desire to run an unconventional grocery store, café and cheese room. It was the first of its kind serving fresh, simple and delicious, artisan food along with the best flat whites before they were even a thing.Several elements of our first store in Sydney remain and can be seen in the UAE, Qatar, Saudi Arabia and India. These include a walk-in cheese room, communal dining tables, show kitchens, an exclusive range of gourmet private-label groceries as well as freshly baked cakes, pastries and breads.There are over 30 Jones the Grocer stores around the world and we want to immerse diners, shoppers and anyone who happens to stumble in, into incredibly good artisan food in all its shared glory.Gourmet food for everyday living.",
-        "rating": "4.6",
-        "review": "Really enjoyed my visit to Jones the Grocer at KAFD. The appetizers were super tasty, and the atmosphere was relaxed and welcoming. The staff were kind and everything overall felt just right. Definitely a spot I’d come back to.",
-        "Distance": "850M",
-        "Walkable": "No"
-    },
-    {
-        "title": "Cafe Tale – KAFD",
-        "description": "Cafe Tale in KAFD is a cozy spot perfect for morning coffee or a refreshing berry mojito. Cafe Tale' vision is to aim to be quality brunch Cafes locally and regionally serving the best coffee, all sustainable and ethically sourced. Cafe Tale is built to create meaningful experiences for local communities through quality products, innovation and an ever evolving vision. Each branch is designed as a welcoming space that brings diverse people together.",
-        "rating": "4.1",
-        "review": "It’s a great tiny little cafe. They only have a couple seats indoors but the majority is outdoor seating, which is lovely when the weather is nice. Food is good and staff were great. It’s inside KAFD at the top of some steps.",
-        "Distance": "800M",
-        "Walkable": "No"
-    },
-    {
-        "title": "Spinneys Kitchen – KAFD",
-        "description": "Located within the Spinneys supermarket, this spot offers ready-to-eat meals and beverages for shoppers on the go.",
-        "rating": "4.4",
-        "review": "Very comprehensive selection.",
-        "Distance": "600M",
-        "Walkable": "Yes"
-    },
-    {
-        "title": "DRAFT Café – KAFD",
-        "description": "Draft Cafe is a lovely cafe that is located in King Abdullah Financial District (KAFD) in Riyadh. The cafe has indoor seating and outdoor seating that overlooks the beautiful views of KAFD. The interior is beautiful and simple using natural elements like wood, plants, neutral colours and lovely decorations and books. Their menu offers a wide selection of specialty coffee, hot and cold beverages, sandwiches. delicious desserts and salads. They introduced new winter drinks with a delightful blend of flavors and warmth, perfect for bringing you comfort during the winter. These winter drinks are: Cherry Mocha, Lotus and Choconut. ",
-        "rating": "4.4",
-        "review": "Draft serves the most delicious coffee and desserts. The atmosphere is nice and the service is really good.",
-        "Distance": "350M",
-        "Walkable": "Yes"
-    },
-    {
-        "title": "Black Tap KAFD",
-        "description": "This is the first entry of the famous New York burger joint into Saudi Arabia’s capital and will offer diners its famous craft burgers and CrazyShake® milkshakes. The Riyadh location will sport the vibrant New York ambiance found in similar branches across the globe, complete with neon signs, graffiti art, grey brick walls, and graphic black and white floors, not to mention its mouth-watering food and trendy playlist. With 10,000 cassettes, 2,500 VHS tapes, over 140 Sneakers, and 500 Audio Decks, boomboxes and speakers masterminded into the design, Noriyoshi Muramatsu of Tokyo-based Studio Glitt has created an iconic and legendary space that’s guaranteed to make a resounding impression.",
-        "rating": "5",
-        "review": "I had an incredible experience at this restaurant The burger was absolutely delicious—juicy, flavorful, and perfectly cooked. What made the experience even better was the amazing staff. Elijah Chege 🙏🏻👍, Alexandr, Maria, and Meerimai were all friendly, attentive, and made me feel so welcome. Their great service really added a personal touch to the meal. I’ll definitely be coming back!\nFood: 5/5  |  Service: 5/5  |  Atmosphere: 5/5",
-        "Distance": "1.1KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Il Baretto",
-        "description": "Il Baretto is located in the heart of KAFD. Since its opening in November 2021, it has built its reputation with a simple and authentic Italian menu which draws influence from the specialty dishes and produce of regional Italy. The menu combines Italian favorites including the popular Veal Milanese and Salt Baked Seabass, with modern classics such as Lobster Linguine and wild Seabass Carpaccio. ",
-        "rating": "4.2",
-        "review": "Beautiful restaurant! The food was so flavourful and rich. The cocktails were fantastic as well. The truffle pasta was the best I’ve ever had! The servers were very polite and friendly and gave great recommendations. A must visit restaurant if you love Italian food. Food: 5/5  |  Service: 5/5  |  Atmosphere: 5/5",
-        "Distance": "1.1KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "A.O.K Kitchen KAFD",
-        "description": "Located in King Abdullah Financial District, A.O.K is founded by Kelly Landesberg who has created a space where everyone is welcome; a space which imbues style and elegance, with inclusivity at its core. Free from refined sugar and conscious to limit its dairy and gluten use, finally there is a restaurant that doesn’t just cope with dietary requirements, but freely offers them as the basis of their innovative, intimate and, most importantly, irresistible dining experience. Whether visiting for breakfast, lunch, afternoon tea or dinner, one thing’s for sure: everything is going to be A.O.K.",
-        "rating": "4.6",
-        "review": "I had an amazing experience at AOK Kitchen Riyadh. From the very beginning, the service was excellent — especially thanks to Jordan, who was kind and professional. The food was delicious, beautifully presented, and each dish had its own unique flavor. The place itself is stunning, with a cozy and elegant atmosphere. I’ll definitely be coming back. Highly recommended! Love the place ✌️Food: 5/5  |  Service: 5/5  |  Atmosphere: 5/5",
-        "Distance": "1.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Joe & The Juice – KAFD",
-        "description": "Joe & The Juice offers a variety of fresh juices, coffee, sandwiches, salads, and breakfast bowls. It is a vibrant spot for fresh juices, coffee, and healthy bites.",
-        "rating": "4.5",
-        "review": "Rhe anne was very nice and friendly. I like the place inside. I tried iced Spanish latte small size (18 riyals ) , it is a little too sweet for my taste but still good!   I will visit again for sure and try something else!",
-        "Distance": "1.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Urth Caffé – KAFD",
-        "description": "Urth Caffé in KAFD is known for organic heirloom coffees, fine teas, and fresh, wholesome cuisine.",
-        "rating": "4.2",
-        "review": "We had a wonderful breakfast at this cozy coffee diner the othe day with my galfriends, the atmosphere was warm and welcoming, perfect for a relaxed morning. We ordered waffles, croissants, and even a pizza — everything was fresh, flavorful, and served quickly. The waffles were a bit dense and stiff,the croissants were buttery and flaky, exactly how they should be. The pizza was a surprising but delicious choice for breakfast — light and full of flavor. What really stood out was their pearl coffee boba — it was absolutely delicious, smooth, and had the perfect balance of coffee richness and boba chewiness. Definitely a spot we’d love to visit again!",
-        "Distance": "1.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Toby’s Estate Coffee Roasters – KAFD",
-        "description": "Urth Caffe, specialty coffee roasters, offering a range of coffee beverages in a modern, award-winning space. The design is modern yet warm, with front glass walls offering a stunning view of KAFd’s buildings and the surrounding Wadi. This two-door entrance establishment is not only functional but aesthetically pleasing, complete with striking mirrors and a breathtaking chandelier that’s nothing short of epic, commanding attention at the heart of the space.",
-        "rating": "3.8",
-        "review": "If you’re looking for a place that combines a cozy ambiance with stylish interior design, Toby’s Estate in Riyadh is a must-visit. The sophisticated decor, with its modern aesthetic and warm lighting, creates a relaxing atmosphere that’s perfect for unwinding or catching up with friends. The attention to detail in the design truly stands out, making it an Instagram-worthy spot.",
-        "Distance": "1.0KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Whites Pharmacy",
-        "description": "Originally started in 1996 in Australia, Jones the Grocer was a passionate project derived from a desire to run an unconventional grocery store, café and cheese room. It was the first of its kind serving fresh, simple and delicious, artisan food along with the best flat whites before they were even a thing.Several elements of our first store in Sydney remain and can be seen in the UAE, Qatar, Saudi Arabia and India. These include a walk-in cheese room, communal dining tables, show kitchens, an exclusive range of gourmet private-label groceries as well as freshly baked cakes, pastries and breads.There are over 30 Jones the Grocer stores around the world and we want to immerse diners, shoppers and anyone who happens to stumble in, into incredibly good artisan food in all its shared glory.Gourmet food for everyday living.",
-        "rating": "4.7",
-        "review": "So nice many brands are there",
-        "Distance": "800M",
-        "Walkable": "No"
-    },
-    {
-        "title": "Lemon Pharmacy",
-        "description": "Cafe Tale in KAFD is a cozy spot perfect for morning coffee or a refreshing berry mojito. Cafe Tale' vision is to aim to be quality brunch Cafes locally and regionally serving the best coffee, all sustainable and ethically sourced. Cafe Tale is built to create meaningful experiences for local communities through quality products, innovation and an ever evolving vision. Each branch is designed as a welcoming space that brings diverse people together.",
-        "rating": "2.5",
-        "review": "The best pharmacy in terms of the doctors in it. Special thanks to Dr. (Ahmed Kassab). May God bless you in your work and knowledge and give you health and wellness. To be honest, I evaluated the pharmacy for you only..",
-        "Distance": "8.1KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Spinneys",
-        "description": "Located within the Spinneys supermarket, this spot offers ready-to-eat meals and beverages for shoppers on the go.",
-        "rating": "4.4",
-        "review": "A clean, well-organized grocery store with a great selection of imported products, fresh vegetables, and quality frozen foods—especially fries. It’s not too crowded, making shopping easy and relaxing. Perfect for finding specialty items you won’t see in other stores. Highly recommended for premium grocery needs.",
-        "Distance": "600M",
-        "Walkable": "Yes"
-    },
-    {
-        "title": "Number Nine Concept Store ",
-        "description": "Draft Cafe is a lovely cafe that is located in King Abdullah Financial District (KAFD) in Riyadh. The cafe has indoor seating and outdoor seating that overlooks the beautiful views of KAFD. The interior is beautiful and simple using natural elements like wood, plants, neutral colours and lovely decorations and books. Their menu offers a wide selection of specialty coffee, hot and cold beverages, sandwiches. delicious desserts and salads. They introduced new winter drinks with a delightful blend of flavors and warmth, perfect for bringing you comfort during the winter. These winter drinks are: Cherry Mocha, Lotus and Choconut. ",
-        "rating": "4.2",
-        "review": "If you’re looking for a one-stop shop with unique and high-quality products, Concept Nine Store is a hidden gem! 💎 From luxurious perfumes to stylish clothing and stunning jewelry, they’ve got it all! Every piece feels carefully curated, and there’s always something new to discover. 🛍️✨The customer service was truly outstanding! The staff went above and beyond to ensure I had a great shopping experience – super friendly, attentive, and knowledgeable! 👏😊I highly recommend visiting if you’re in the area. I’ve added some photos to give you a glimpse – this place is a must-visit! 📸💯",
-        "Distance": "6.2KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Brands For Less ",
-        "description": "This is the first entry of the famous New York burger joint into Saudi Arabia’s capital and will offer diners its famous craft burgers and CrazyShake® milkshakes. The Riyadh location will sport the vibrant New York ambiance found in similar branches across the globe, complete with neon signs, graffiti art, grey brick walls, and graphic black and white floors, not to mention its mouth-watering food and trendy playlist. With 10,000 cassettes, 2,500 VHS tapes, over 140 Sneakers, and 500 Audio Decks, boomboxes and speakers masterminded into the design, Noriyoshi Muramatsu of Tokyo-based Studio Glitt has created an iconic and legendary space that’s guaranteed to make a resounding impression.",
-        "rating": "3.9",
-        "review": "They have a good collection of brands, mainly including cloths, bags and shoes. You have to search for your size and design you like, it takes time. Price wise, certainly there is discount on all of the products, there may be some on higher end. There fashion accessories also including caps, belts, jewelry etc. The only issue is you have to compromise with what you see, no options or varieties from your brand of choice. Overall you will find some of the products you want.",
-        "Distance": "6.2KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Nahdi Pharmacy",
-        "description": "Il Baretto is located in the heart of KAFD. Since its opening in November 2021, it has built its reputation with a simple and authentic Italian menu which draws influence from the specialty dishes and produce of regional Italy. The menu combines Italian favorites including the popular Veal Milanese and Salt Baked Seabass, with modern classics such as Lobster Linguine and wild Seabass Carpaccio. The northern Italian influenced pizza which is cooked in an open wood burning oven is not to be missed. kid’s below 12 are allowed only for lunch weekend day Thursday- Friday-Saturday.Our menu includes a a curation of Italian favourites as well as modern classics such as Veal Milanese, whole seabass, lobster linguine, salmon carpaccio, and wood-fired northern Italian pizza.",
-        "rating": "4.2",
-        "review": "Best pharmacists , best serviceKeep it up , guys 👍👍👍 …He speaks very politely with the customer May Allah Almighty bless you with a good life",
-        "Distance": "20.8KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Samsung Experience Store ",
-        "description": "Located in King Abdullah Financial District, A.O.K is founded by Kelly Landesberg who has created a space where everyone is welcome; a space which imbues style and elegance, with inclusivity at its core. Free from refined sugar and conscious to limit its dairy and gluten use, finally there is a restaurant that doesn’t just cope with dietary requirements, but freely offers them as the basis of their innovative, intimate and, most importantly, irresistible dining experience. Whether visiting for breakfast, lunch, afternoon tea or dinner, one thing’s for sure: everything is going to be A.O.K.",
-        "rating": "3.3",
-        "review": "Amazing Experience with the Samsung S25 Ultra! I just got my new Samsung S25 Ultra, and the buying experience was absolutely fantastic! A special thanks to Hayah حياة for her outstanding assistance. She was incredibly knowledgeable, patient, and helped me choose the perfect device for my needs. I truly appreciate her professionalism and excellent customer service!\n",
-        "Distance": "2.9KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Boots Pharmacy",
-        "description": "Joe & The Juice offers a variety of fresh juices, coffee, sandwiches, salads, and breakfast bowls. It is a vibrant spot for fresh juices, coffee, and healthy bites.",
-        "rating": "3.5",
-        "review": "Nice pharmacy in a mall",
-        "Distance": "2.7KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Personage",
-        "description": "Urth Caffé in KAFD is known for organic heirloom coffees, fine teas, and fresh, wholesome cuisine.",
-        "rating": "4",
-        "review": "This place is a must, local brands and local designers. It’s a no brainer",
-        "Distance": "15.4KM",
-        "Walkable": "No"
-    },
-    {
-        "title": "Jarir Bookstore – Al Olaya Branch",
-        "description": "Urth Caffe, specialty coffee roasters, offering a range of coffee beverages in a modern, award-winning space. The design is modern yet warm, with front glass walls offering a stunning view of KAFd’s buildings and the surrounding Wadi. This two-door entrance establishment is not only functional but aesthetically pleasing, complete with striking mirrors and a breathtaking chandelier that’s nothing short of epic, commanding attention at the heart of the space.",
-        "rating": "4.3",
-        "review": "One of the best bookstore of Riyadh. Beautifully organized with variety of stuff. You can find everything under one roof. Go and avail different offers.",
-        "Distance": "13.8KM",
-        "Walkable": "No"
-    }
+ {
+  "Title": "Kingdom Centre Sky Bridge",
+  "Tags": "modern landmarks, observatory",
+  "Description": "Iconic skyscraper with a dramatic sky bridge offering panoramic views of Riyadh—especially magical at sunset.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Al Masmak Palace (Masmak Fortress)",
+  "Tags": "heritage, history, museum",
+  "Description": "19th-century mudbrick fort central to Saudi history, now a museum showcasing artifacts of the Battle of Riyadh and early Saudi state.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "National Museum of Saudi Arabia",
+  "Tags": "culture, museum, family-friendly",
+  "Description": "Extensive exhibits tracing Arabia from prehistoric times to modern Saudi; vibrant and educational.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Murabba Palace (King Abdulaziz Historical Centre)",
+  "Tags": "palace, museum, heritage",
+  "Description": "Former royal residence and administrative centre (1938–1953), now a museum housing arts, archives and King Abdulaziz memorabilia.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Diriyah \/ At‑Turaif World Heritage Site",
+  "Tags": "heritage district, UNESCO, dining",
+  "Description": "The historic birthplace of the first Saudi state, with mud‑brick palaces, light‑and‑sound evenings, plus nearby Bujairi Terrace restaurants and cafés.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Al Bujairi Heritage Park & Bujairi Terrace",
+  "Tags": "park, dining, leisure",
+  "Description": "Scenic evening-filled gathering spot in Diriyah—filled with cafés, restaurants and views of heritage architecture.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Edge of the World",
+  "Tags": "nature, day‑trip, hiking",
+  "Description": "Dramatic cliff overlooking endless desert—famous for hiking, Jeep tours and sunset views ~100 km outside Riyadh.",
+  "Rating": 4.8
+ },
+ {
+  "Title": "Wadi Hanifa",
+  "Tags": "nature, walking, picnic",
+  "Description": "A green valley cutting through Riyadh—great for picnicking, walking and peaceful urban nature.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "VIA Riyadh",
+  "Tags": "shopping, entertainment, upscale",
+  "Description": "New luxury lifestyle hub built in Salmani architectural style—boutiques, art, restaurants and cinemas in a vibrant cultural complex.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Boulevard Riyadh City",
+  "Tags": "entertainment district",
+  "Description": "Large outdoor entertainment zone with water shows, dining and attractions; frequented in Riyadh Season.",
+  "Rating": 4
+ },
+ {
+  "Title": "Riyadh TV Tower",
+  "Tags": "landmark, architecture",
+  "Description": "Tall broadcast tower and landmark from 1980s; visible from much of the city.",
+  "Rating": 3.8
+ },
+ {
+  "Title": "Diplomatic Quarter & Le Maschou (restaurant)",
+  "Tags": "dining, upscale, diplomacy",
+  "Description": "Diplomatic Quarter known for leafy hiking paths; fine‑dining like Le Maschou offers exquisite French cuisine in elegant setting.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Souk Al‑Zal",
+  "Tags": "traditional market, shopping, local crafts",
+  "Description": "Historic marketplace selling antiques, local crafts, oud, perfumes and Saudi souvenirs.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Takya at Bujairi Terrace",
+  "Tags": "dining, Saudi contemporary",
+  "Description": "Saudi-contemporary fusion dining inside Diriyah’s Bujairi Terrace—modern twist on local flavours.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Robata at The Canopy",
+  "Tags": "dining, Japanese",
+  "Description": "Robata‑style Japanese grill restaurant in Riyadh’s trendy The Canopy district.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Beit Omar ",
+  "Tags": "dining, Lebanese",
+  "Description": "Quality Lebanese cuisine in a refined setting on Tahlia Street, a popular upscale district.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Red Sand Dunes & Monster‑truck",
+  "Tags": "adventure, desert",
+  "Description": "Red dunes near Riyadh where you can rent monster‑truck or go dune‑bashing; local fun.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Riyadh Zoo",
+  "Tags": "family, wildlife, zoo",
+  "Description": "Large city zoo featuring animals from around the world; a favorite for families and kids.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Salam Park",
+  "Tags": "park, nature, family-friendly",
+  "Description": "Sprawling urban park with a lake, walking trails, paddle boats, and picnic spots.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Al Rajhi Grand Mosque",
+  "Tags": "religious site, mosque, architecture",
+  "Description": "One of the largest mosques in Riyadh; known for its impressive Islamic architecture.",
+  "Rating": 4.7
+ },
+ {
+  "Title": "Sky Shopping Mall",
+  "Tags": "shopping, family, indoor",
+  "Description": "Modern mall with a variety of retail outlets, eateries, and indoor entertainment for kids.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Riyadh Season (Winter Wonderland)",
+  "Tags": "festival, seasonal, entertainment",
+  "Description": "Annual entertainment and cultural festival featuring concerts, rides, dining, and exhibits.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Janadriyah Cultural Festival",
+  "Tags": "cultural festival, annual event, tradition",
+  "Description": "Saudi Arabia’s most prominent heritage and cultural festival showcasing crafts, cuisine and folklore.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Riyadh Front Exhibition & Conference Center",
+  "Tags": "shopping, events, dining",
+  "Description": "Trendy mixed-use development with top restaurants, pop-ups and seasonal events.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Imam Turki Bin Abdullah Grand Mosque",
+  "Tags": "mosque, history, religious site",
+  "Description": "A majestic mosque near the historic Al Masmak area, known for its beautiful design.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "King Abdullah Park",
+  "Tags": "fountain, leisure, family",
+  "Description": "Well-kept park with a large dancing fountain show, gardens, and kids play area.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "World Sights Park",
+  "Tags": "miniatures, photo spot, park",
+  "Description": "Park featuring miniature replicas of famous world landmarks like the Eiffel Tower and Taj Mahal.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Tuwaiq Palace",
+  "Tags": "architecture, events, gardens",
+  "Description": "Award-winning architectural marvel in the Diplomatic Quarter; often used for official receptions and cultural events.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Al Faisaliah Tower",
+  "Tags": "skyscraper, dining, shopping",
+  "Description": "One of Riyadh’s tallest buildings, housing a globe-shaped restaurant and a luxury mall.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "The National Library of Saudi Arabia",
+  "Tags": "library, culture, architecture",
+  "Description": "Modern cultural hub offering exhibitions, reading areas, and rare Islamic manuscripts.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Heet Cave",
+  "Tags": "nature, cave, adventure",
+  "Description": "Hidden natural cave with a crystal-clear underground lake—perfect for experienced hikers and explorers.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Naila Art Gallery",
+  "Tags": "art, modern, gallery",
+  "Description": "Contemporary art space showcasing Saudi and international artists in a modern setting.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Granada Mall",
+  "Tags": "shopping, indoor, entertainment",
+  "Description": "One of Riyadh’s largest malls, featuring local and international brands, a food court, and family activities.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Azizia Panda Mall",
+  "Tags": "shopping, grocery, local",
+  "Description": "Popular shopping center with hypermarket and retail options—budget-friendly and accessible.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "U Walk Riyadh",
+  "Tags": "shopping, restaurants, nightlife",
+  "Description": "Trendy boulevard with high-end cafes, restaurants, and brand stores; vibrant at night.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Al Watan Park",
+  "Tags": "family, fountains, green space",
+  "Description": "Green park featuring a replica of the Arabian Peninsula with water channels, paddle boats, and walking areas.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "King Fahad Cultural Centre",
+  "Tags": "culture, exhibitions, theater",
+  "Description": "Hosts national conferences, concerts, and exhibitions in a modern setting.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Public Investment Fund Tower",
+  "Tags": "skyscraper, business",
+  "Description": "High-rise tower in KAFD representing Saudi’s economic hub. Not open to public.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "KAFD World Trade Center",
+  "Tags": "business district, finance",
+  "Description": "Part of King Abdullah Financial District; home to commercial offices and business events.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Al Majdoul Tower",
+  "Tags": "architecture, twisted tower",
+  "Description": "A globally recognized helical-shaped skyscraper in Riyadh’s business zone.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Olaya Towers",
+  "Tags": "commercial, business area",
+  "Description": "Twin towers located in Olaya District, center of commerce."
+ },
+ {
+  "Title": "Boudl Tower",
+  "Tags": "hotel, business accommodation",
+  "Description": "Upscale hotel tower catering to long-stay corporate guests.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Al Nakheel Tower",
+  "Tags": "skyline, residence",
+  "Description": "Residential tower in Riyadh with premium housing units."
+ },
+ {
+  "Title": "Al Rajhi Bank Tower",
+  "Tags": "financial, skyline",
+  "Description": "Headquarters for one of the largest Islamic banks in the world."
+ },
+ {
+  "Title": "Burj Al Anoud",
+  "Tags": "hotel, mixed-use",
+  "Description": "Tower housing luxury hotels and office spaces near King Fahd Road.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Burj Rafal",
+  "Tags": "skyscraper, luxury hotel",
+  "Description": "One of Riyadh’s tallest buildings with 5-star hotel and residence.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Villas in the Sky",
+  "Tags": "residential, luxury",
+  "Description": "Exclusive residential complex known for sky villas with private amenities."
+ },
+ {
+  "Title": "Hamad Tower",
+  "Tags": "office tower",
+  "Description": "Commercial tower part of the northern business district."
+ },
+ {
+  "Title": "Riyadh Water Tower",
+  "Tags": "landmark, architecture",
+  "Description": "Historic mushroom-shaped water tower built in the 1970s.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Khaldia Towers",
+  "Tags": "commercial",
+  "Description": "Twin towers hosting businesses in a modern urban space."
+ },
+ {
+  "Title": "Riyad Bank Tower",
+  "Tags": "financial, commercial",
+  "Description": "Corporate skyscraper along King Fahd Road for Riyad Bank."
+ },
+ {
+  "Title": "Etlal Tower",
+  "Tags": "residential, modern living",
+  "Description": "Residential development popular for its view and height."
+ },
+ {
+  "Title": "Crowne Plaza Riyadh Palace",
+  "Tags": "hotel, business, upscale",
+  "Description": "Premier hotel near ministries and embassies. Great for conferences.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "KAFD Metro Station",
+  "Tags": "transportation, infrastructure",
+  "Description": "Upcoming metro stop at the King Abdullah Financial District."
+ },
+ {
+  "Title": "Ministry of Interior Building",
+  "Tags": "government, modernist",
+  "Description": "Distinctive blocky complex serving Saudi’s internal affairs ministry."
+ },
+ {
+  "Title": "Royal Secondary Industrial Institute",
+  "Tags": "education, technical",
+  "Description": "Technical education institute for secondary-level vocational training."
+ },
+ {
+  "Title": "Sohaibani & Partners Law Firm HQ",
+  "Tags": "business, legal",
+  "Description": "HQ of a major Saudi legal firm. Located in a notable Riyadh high-rise."
+ },
+ {
+  "Title": "Boulevard World",
+  "Tags": "entertainment, global retail, theme park",
+  "Description": "International-themed destination featuring replicas of global landmarks, markets, and cuisine from various countries.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Digital City",
+  "Tags": "tech district, lifestyle, mixed-use",
+  "Description": "Modern urban space combining technology offices, high-end residences, restaurants, and cultural venues."
+ },
+ {
+  "Title": "King Abdullah Financial District (KAFD)",
+  "Tags": "financial, business, mixed-use",
+  "Description": "High-tech financial hub with skyscrapers, shopping arcades, restaurants, and planned metro access."
+ },
+ {
+  "Title": "Roshn Front",
+  "Tags": "retail, family-friendly, mixed-use",
+  "Description": "Newly launched retail and leisure hub featuring international brands, cinema, and culinary hotspots.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Laysen Valley",
+  "Tags": "luxury, dining, upscale shopping",
+  "Description": "High-end retail and dining district with elegant design and exclusive international boutiques.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Riyadh Gallery Mall",
+  "Tags": "shopping, indoor, family",
+  "Description": "Large mall featuring major international brands, food courts, and kids’ play areas. Centrally located.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Riyadh Park",
+  "Tags": "modern mall, cinema, entertainment",
+  "Description": "Upscale shopping center with VOX Cinemas, high-street fashion, restaurants, and spacious layout.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "The View Mall",
+  "Tags": "shopping, dining, family",
+  "Description": "Medium-sized shopping mall with relaxed vibes and essential shopping brands.",
+  "Rating": 4
+ },
+ {
+  "Title": "Tala Mall",
+  "Tags": "neighborhood mall, retail",
+  "Description": "Community-focused shopping mall offering essentials, cafes, and clothing stores.",
+  "Rating": 3.9
+ },
+ {
+  "Title": "Sahara Mall",
+  "Tags": "retail, fashion, electronics",
+  "Description": "Well-established mall with fashion outlets and electronics. Slightly dated but reliable.",
+  "Rating": 3.8
+ },
+ {
+  "Title": "Centria Mall",
+  "Tags": "luxury shopping, fashion",
+  "Description": "Upscale mall with luxury boutiques like Chanel, Gucci, and Rolex; fine-dining restaurants included.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Nakheel Mall",
+  "Tags": "retail, local and global brands",
+  "Description": "Comprehensive shopping center with fashion, tech, and cafes; great for families.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Souq Taibah",
+  "Tags": "traditional market, local crafts",
+  "Description": "A beloved local souq with abayas, perfumes, gold, and antiques. Great for souvenir shopping.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Al Kindi Plaza",
+  "Tags": "community, open-air, lifestyle",
+  "Description": "Open-air plaza near Diplomatic Quarter; home to cafes, cultural centers, and seasonal events.",
+  "Rating": 4
+ },
+ {
+  "Title": "Souq al-Awaleen",
+  "Tags": "antiques, old market",
+  "Description": "Traditional bazaar with rare Saudi antiques, ceramics, and tribal items.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Souq Haraj Ibn Qasim",
+  "Tags": "flea market, bargain",
+  "Description": "Massive used-goods market offering everything from electronics to furniture.",
+  "Rating": 4
+ },
+ {
+  "Title": "Souq al-Hilla",
+  "Tags": "local market, clothing",
+  "Description": "Known for men's thobes and fabrics; serves local clientele.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Al Maigliah Market Center",
+  "Tags": "commercial, bulk goods",
+  "Description": "Shopping center with everyday products and small household items.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Al Deira Market",
+  "Tags": "wholesale, textile, electronics",
+  "Description": "Wholesale district featuring electronics, fabric, and general goods.",
+  "Rating": 43
+ },
+ {
+  "Title": "Swaigah Trade Center",
+  "Tags": "retail, urban mall",
+  "Description": "Popular indoor trade complex with mobile, electronics, and more.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Wahat al-Nakheel",
+  "Tags": "green space, leisure, urban nature",
+  "Description": "Quiet landscaped area perfect for light strolls and relaxation away from crowds.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Al-Suwaidi Park",
+  "Tags": "community park, local families",
+  "Description": "Popular with families for its playgrounds, picnic spots, and shaded trees.",
+  "Rating": 4
+ },
+ {
+  "Title": "Al Fouta Garden",
+  "Tags": "heritage park, urban nature",
+  "Description": "One of Riyadh's oldest parks, nestled in the old city with historical value and old trees.",
+  "Rating": 3.7
+ },
+ {
+  "Title": "Thumamah Wildlife Park",
+  "Tags": "wildlife, nature reserve",
+  "Description": "Large natural reserve where you can camp, hike, or observe wildlife.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "King Abdulaziz Manakh Park",
+  "Tags": "local park, community",
+  "Description": "Community park with open lawns, playgrounds, and family seating.",
+  "Rating": 3.9
+ },
+ {
+  "Title": "Jabal Abu Makhruq",
+  "Tags": "rocky hill, natural lookout",
+  "Description": "Elevated rock formation with walking trails and panoramic views over Riyadh.",
+  "Rating": 3.9
+ },
+ {
+  "Title": "Al Khalidiyah Park",
+  "Tags": "park, shaded, neighborhood",
+  "Description": "Shady trees and jogging tracks in a less-crowded neighborhood park.",
+  "Rating": 3.9
+ },
+ {
+  "Title": "Wadi Hanifah Park",
+  "Tags": "valley, nature, trails",
+  "Description": "Scenic valley park with water streams, walking paths, and picnic areas. Great for nature lovers.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Wadi Laban Park",
+  "Tags": "valley, picnic area",
+  "Description": "Natural green space tucked away in a residential area with trails and birdlife.",
+  "Rating": "7\/10"
+ },
+ {
+  "Title": "Wadi Namar Park",
+  "Tags": "waterfront, cliffs, nature",
+  "Description": "Picturesque valley with a large lake, waterfalls, and stone pathways. Ideal for evening strolls.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Jabal Tuwaiq",
+  "Tags": "mountain, hike, viewpoint",
+  "Description": "Massive escarpment known as the “Edge of the World’s cousin.” Great for hiking and stargazing.",
+  "Rating": 4.7
+ },
+ {
+  "Title": "King Salman Park, Banban",
+  "Tags": "mega park, upcoming",
+  "Description": "Riyadh’s mega green initiative expected to be the largest city park in the world. Still under construction."
+ },
+ {
+  "Title": "King Khalid Grand Mosque",
+  "Tags": "religious, mosque, architecture",
+  "Description": "One of the largest mosques in Riyadh, known for its peaceful ambiance, striking dome, and royal connection.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "KAFD Grand Mosque",
+  "Tags": "religious, mosque, architecture",
+  "Description": "A contemporary mosque in King Abdullah Financial District with geometric design and open skylights.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "King Abdullah Mosque",
+  "Tags": "religious, mosque, architecture",
+  "Description": "Named after King Abdullah, this mosque is frequented for Jumu’ah prayers and is known for its accessibility.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Sheikh Muhammad bin Ibrahim Mosque",
+  "Tags": "religious, mosque, heritage",
+  "Description": "Historic mosque with traditional Najdi design, located near the governmental complex.",
+  "Rating": 4.9
+ },
+ {
+  "Title": "Hilla Mosque",
+  "Tags": "religious, mosque, traditional",
+  "Description": "A local mosque known among Riyadh’s older districts; architecturally modest but meaningful.",
+  "Rating": 4
+ },
+ {
+  "Title": "Sohoom Mosque",
+  "Tags": "religious, mosque, community",
+  "Description": "Neighborhood mosque known for cleanliness and tranquility.",
+  "Rating": 4.8
+ },
+ {
+  "Title": "King Khalid Airport Mosque",
+  "Tags": "religious, mosque, travel",
+  "Description": "Located inside the King Khalid International Airport; designed for travelers.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Princess Latifa bint Sultan Mosque",
+  "Tags": "religious, mosque, named",
+  "Description": "A newer mosque dedicated to Princess Latifa; appreciated for modern architecture and elegance."
+ },
+ {
+  "Title": "Salam Mosque",
+  "Tags": "religious, mosque, community",
+  "Description": "Community mosque near government institutions, often used for midday prayers.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "King Abdulaziz Mosque",
+  "Tags": "religious, mosque, historical",
+  "Description": "Historic mosque commemorating the founder of modern Saudi Arabia; notable for traditional design.",
+  "Rating": 4.7
+ },
+ {
+  "Title": "Al Madi Mosque",
+  "Tags": "religious, mosque, neighborhood",
+  "Description": "Smaller mosque serving a residential community.",
+  "Rating": 4.8
+ },
+ {
+  "Title": "King Fahd Mosque",
+  "Tags": "religious, mosque, central",
+  "Description": "One of the prominent mosques in central Riyadh with ample space and easy access.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Al Dakheel Mosque",
+  "Tags": "religious, mosque",
+  "Description": "Local mosque popular among the elderly community in central Riyadh.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Thumairi Gate",
+  "Tags": "heritage, historical site, architecture",
+  "Description": "Historic entrance to old Riyadh, located near Masmak Fortress. Represents part of the ancient city wall.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Dakhnah Gate",
+  "Tags": "heritage, gate, traditional",
+  "Description": "One of the preserved gates of old Riyadh’s wall, close to the central souq area.",
+  "Rating": 4.9
+ },
+ {
+  "Title": "Al Abtal Gate",
+  "Tags": "heritage, old city",
+  "Description": "Another original gate from Riyadh's ancient city wall, less visited but historically significant.",
+  "Rating": "-"
+ },
+ {
+  "Title": "Nasiriyah Gate",
+  "Tags": "historical site, gate",
+  "Description": "Historic city wall gate located in the Nasiriyah district; restored as part of urban heritage.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Safat Clocktower",
+  "Tags": "clocktower, central landmark",
+  "Description": "A vintage-style clocktower in central Riyadh, associated with the Safat Square civic area.",
+  "Rating": 4.8
+ },
+ {
+  "Title": "Red Palace",
+  "Tags": "palace, heritage, political history",
+  "Description": "Former palace of King Saud; famous for its red stone walls. Now part of Riyadh’s cultural tour programs.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Thulaim Palace",
+  "Tags": "historical palace",
+  "Description": "A heritage structure in the Thulaim district, representing royal governance in earlier decades.",
+  "Rating": 5
+ },
+ {
+  "Title": "Badi'a Palace",
+  "Tags": "heritage, private estate",
+  "Description": "Heritage structure less documented, often referenced in cultural preservation lists."
+ },
+ {
+  "Title": "Royal Saudi Air Force Museum",
+  "Tags": "culture, museum, education",
+  "Description": "Museum displaying historical aircraft, military equipment, and interactive aviation exhibits. Great for families.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "King Abdulaziz Public Library",
+  "Tags": "culture, museum, education",
+  "Description": "Historic library and cultural center showcasing Saudi heritage, manuscripts, and rare books.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "SAMA Money Museum",
+  "Tags": "culture, museum, education",
+  "Description": "Central Bank's currency museum showcasing old coins, currency printing, and Saudi financial history.",
+  "Rating": 3.8
+ },
+ {
+  "Title": "Al-Faisal Museum for Arab-Islamic Art",
+  "Tags": "culture, museum, education",
+  "Description": "Museum celebrating Islamic art, architecture, and regional heritage. Features ceramics, manuscripts, and textiles.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Archaeological Museum at King Saud University",
+  "Tags": "culture, museum, education",
+  "Description": "Academic museum housing Saudi archaeological finds and artifacts from early civilizations.",
+  "Rating": "-"
+ },
+ {
+  "Title": "Al Hamdan Heritage Museum",
+  "Tags": "culture, museum, education",
+  "Description": "Private museum with Saudi antiques, vintage cars, and old lifestyle items.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "King Salman Science Oasis",
+  "Tags": "culture, museum, education",
+  "Description": "Interactive science center for youth education in STEM—hands-on exhibits and activities.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Riyadh Techno Valley",
+  "Tags": "culture, museum, education",
+  "Description": "Tech innovation park linked to King Saud University—focused on research, startups, and science.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "WWE Experience",
+  "Tags": "culture, museum, entertainment",
+  "Description": "Themed entertainment venue with WWE memorabilia and interactive wrestling exhibits.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Kingdom Arena",
+  "Tags": "sports, entertainment, venue",
+  "Description": "A major venue in Riyadh for hosting international sports events, large-scale concerts, and national entertainment showcases.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Mohammed Abdo Arena",
+  "Tags": "sports, entertainment, venue",
+  "Description": "A renowned arena used for music concerts, sports competitions, and cultural events in the heart of Riyadh.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Prince Faisal bin Fahd Sports City",
+  "Tags": "sports, entertainment, venue",
+  "Description": "A large sports complex offering stadium facilities for football matches and community athletic programs.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "King Fahd Sports City",
+  "Tags": "sports, entertainment, venue",
+  "Description": "A prominent location for national sports events and public festivities, equipped for multi-sport use.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "King Saud University Stadium",
+  "Tags": "sports, entertainment, venue",
+  "Description": "A university-based stadium known for hosting football matches and student sporting activities.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Al-Shabab Club Stadium",
+  "Tags": "sports, entertainment, venue",
+  "Description": "Home ground of Al-Shabab FC, this stadium regularly hosts professional football games and league matches.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "GPYW Indoor Stadium",
+  "Tags": "sports, entertainment, venue",
+  "Description": "An indoor arena in Riyadh designed for basketball, volleyball, and other indoor events and competitions.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Prince Turki bin Abdul Aziz Stadium",
+  "Tags": "sports, entertainment, venue",
+  "Description": "A multipurpose stadium frequently used for football games and local sports tournaments.",
+  "Rating": 4
+ },
+ {
+  "Title": "King Abdulaziz Racetrack",
+  "Tags": "sports, entertainment, venue",
+  "Description": "One of Riyadh’s most famous horse racing venues, known for hosting traditional and modern equestrian events.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Al Areen Equestrian Club",
+  "Tags": "sports, entertainment, venue",
+  "Description": "A prestigious equestrian club offering horseback riding, training facilities, and competitions for horse enthusiasts.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Bellbird",
+  "Tags": "café, brunch, contemporary, elegant, Riyadh",
+  "Description": "Modern, chic café offering Middle Eastern and Mediterranean-inspired cuisine with elegant ambiance.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Coya",
+  "Tags": "Latin-American, lively, stylish, ceviche, nightlife",
+  "Description": "Upscale Peruvian-Latin restaurant with vibrant jungle-themed décor, ceviche counter, and terrace seating.",
+  "Rating": 4
+ },
+ {
+  "Title": "Flour & Firewood",
+  "Tags": "brunch, bakery, casual, sourdough, family-friendly",
+  "Description": "New York–style bakery café known for sourdough, pizzas, pastas, and hearty brunches.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Habra",
+  "Tags": "steakhouse, meat-focused, industrial-chic, modern",
+  "Description": "Trendy beef canteen with flavorful steaks, sliders, and shared plates in a vibrant setting.",
+  "Rating": 4.7
+ },
+ {
+  "Title": "La Petite Maison (LPM) Riyadh",
+  "Tags": "French-Mediterranean, upscale, elegant, Riviera",
+  "Description": "High-end French Mediterranean dining with seasonal dishes and Riviera-inspired ambiance.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Lunch Room Social Dining",
+  "Tags": "brunch, social dining, global fusion, casual",
+  "Description": "Vibrant brunch café known for its social atmosphere and creative global menu.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Lusin Restaurant",
+  "Tags": "Armenian, fine dining, Middle Eastern, elegant",
+  "Description": "Authentic Armenian cuisine served in a refined, upscale setting with Middle Eastern touches.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Mama Noura",
+  "Tags": "fast casual, shawarma, local favorite, Middle Eastern",
+  "Description": "Iconic Riyadh eatery serving shawarma, falafel, and fresh juices in a no-frills, fast-paced environment.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "MAMO Michelangelo",
+  "Tags": "Italian, Mediterranean, upscale, Riviera, romantic",
+  "Description": "Elegant Italian restaurant blending Provençal charm with classic Mediterranean flavors.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "MARBLE",
+  "Tags": "burger, steakhouse, meat-centric, smoky",
+  "Description": "Gourmet burger and steakhouse with a focus on flame-grilled, smoky flavors in a casual atmosphere.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "MYAZU Riyadh",
+  "Tags": "Japanese, upscale, sushi, contemporary, elegant",
+  "Description": "Modern Japanese dining experience with exquisite presentation and premium seafood.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Porterhouse",
+  "Tags": "steakhouse, dry-aged, upscale casual, modern",
+  "Description": "Dry-aged steakhouse with premium cuts, elegant décor, and crafted appetizers.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Roka",
+  "Tags": "Japanese, stylish, fusion, upscale, sushi and grill",
+  "Description": "Global Japanese chain offering sushi, robata grill, and modern Japanese fusion dishes.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "San Carlo Cicchetti",
+  "Tags": "Italian, fine dining, Venetian-style, elegant",
+  "Description": "Upscale Italian restaurant inspired by Venetian cicchetti culture with beautifully plated small dishes.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Section B",
+  "Tags": "burger, trendy, urban, casual, Riyadh favorite",
+  "Description": "Popular burger joint known for its minimal interior, juicy patties, and cult following.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "The Social Pizzeria",
+  "Tags": "pizza, cozy, wood-fired, Italian, casual",
+  "Description": "Relaxed pizzeria offering wood-fired pizzas, pastas, and fresh salads in a warm setting.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "The Villa Restaurant",
+  "Tags": "fusion, romantic, upscale, contemporary",
+  "Description": "Elegant restaurant offering fusion cuisine in a villa-style setting ideal for romantic dining.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Tokyo",
+  "Tags": "Japanese, sushi, teppanyaki, traditional, authentic",
+  "Description": "One of Riyadh’s oldest Japanese restaurants, known for sushi, bento, and teppanyaki.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Saravanaa Bhavan- Riyadh ( Murabah Avenue Mall)",
+  "Tags": "Indian, South Indian, vegetarian, casual, family-friendly",
+  "Description": "Popular South Indian vegetarian chain offering dosas, thalis, chaats, and filter coffee in a mall setting.",
+  "Rating": 4
+ },
+ {
+  "Title": "AlBaik",
+  "Tags": "fast food, Saudi, chicken, casual, iconic",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Riyadh Avenue Mall ",
+  "Tags": "shopping, mall, family-friendly, dining, entertainment",
+  "Description": "Large shopping center with retail stores, cinema, food court, and family entertainment zones.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Kudu - Al Murabba ",
+  "Tags": "Saudi, fast casual, sandwiches, breakfast, coffee",
+  "Description": "Local café-restaurant chain serving sandwiches, wraps, coffee, and breakfast plates.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Al Sayyad Al Alami Seafood Restaurant",
+  "Tags": "seafood, Middle Eastern, upscale, grill, family-friendly",
+  "Description": "Seafood restaurant serving grilled fish, prawns, and regional dishes with generous portions.",
+  "Rating": 3.8
+ },
+ {
+  "Title": "كوفي كلوب البن الفريد Coffee Club & unique coffee",
+  "Tags": "café, coffee, specialty, local roastery, cozy",
+  "Description": "Specialty coffee shop offering unique blends, pastries, and a laid-back atmosphere.",
+  "Rating": 4
+ },
+ {
+  "Title": "Shabiyat Abu Zaid Restaurant ",
+  "Tags": "Arabic, traditional, local cuisine, casual, family-style",
+  "Description": "Traditional Saudi restaurant serving kabsa, mandi, and grilled meats in a casual, homey setting."
+ },
+ {
+  "Title": "Shawarmer | شاورمر",
+  "Tags": "fast food, shawarma, Saudi, chain",
+  "Description": "Quick-service chain known for inventive shawarma flavours like tikka and pomegranate molasses.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "TABKHA",
+  "Tags": "Middle Eastern, home-style, casual",
+  "Description": "Casual eatery offering homemade Arabic classics such as mansaf, maqluba, and kibbeh.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Subway",
+  "Tags": "fast food, global chain, sandwiches",
+  "Description": "Global sandwich chain offering customizable subs, wraps, and salads.",
+  "Rating": 3.9
+ },
+ {
+  "Title": "companions cafe",
+  "Tags": "café, casual, local",
+  "Description": "Quaint local café offering a relaxed setting and stylish minimalist design.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Breehant coffee roastery.",
+  "Tags": "café, specialty coffee, roastery",
+  "Description": "Specialty roastery known for high-quality beans, expert brewing, and warm, cozy ambiance.",
+  "Rating": 4.9
+ },
+ {
+  "Title": "Aseeb Restaurant",
+  "Tags": "Najdi, upscale, traditional",
+  "Description": "Elegant Najdi-style restaurant offering traditional Saudi dishes in luxurious decor.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "China innovations ",
+  "Tags": "Chinese, casual dining, Asian cuisine",
+  "Description": "Casual Chinese restaurant with a variety of regional dishes and modern interiors.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Three Cafe",
+  "Tags": "café, desserts, coffee, casual",
+  "Description": "Cozy café known for V60 pour-over coffee and signature waffle sticks.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Meetup Cafe & Pastry\r",
+  "Tags": "café, pastries, casual",
+  "Description": "Charming café popular for its pastries, light food, and efficient delivery service.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "THE ORANGE HELEN\r",
+  "Tags": "café, desserts, specialty, roastery",
+  "Description": "Trendy café and roastery celebrated for its creative desserts and vibrant interiors.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "CHOLLA COFFEE",
+  "Tags": "café, coffee, casual, local",
+  "Description": "Minimalist café with a focus on coffee quality and aesthetic presentation.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "enekas Café مقهى انعكاس",
+  "Tags": "café, casual, reflective, local",
+  "Description": "Ambient café known for its wide space, artistic design, and tranquil setting.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Clap",
+  "Tags": "lounge, modern Asian, fine dining",
+  "Description": "Upscale rooftop restaurant and lounge offering modern Japanese dishes and crafted cocktails.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Iris cafe",
+  "Tags": "café, floral, casual, Instagrammable",
+  "Description": "Floral-themed café with pastel decor, artisan coffee, and desserts.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Aziz Bakery",
+  "Tags": "bakery, pastries, local, casual",
+  "Description": "Established bakery offering traditional and contemporary baked goods.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Enaba عنبة",
+  "Tags": "café, desserts, casual, local",
+  "Description": "Modern Arabic dessert café known for basbousa, konafa, and seasonal sweets.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "PICKUP Burger",
+  "Tags": "burgers, casual, fast-casual, Riyadh",
+  "Description": "Smash-style burgers and loaded fries in a minimalist, modern space.",
+  "Rating": 4.7
+ },
+ {
+  "Title": "WISTER",
+  "Tags": "café, specialty coffee, brunch, minimalist",
+  "Description": "Clean, design-forward café pouring specialty brews and light bites.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Bullseye",
+  "Tags": "burgers, gourmet, craft, American",
+  "Description": "Premium burgers with house sauces and hefty sides.",
+  "Rating": 4.9
+ },
+ {
+  "Title": "مقهى ومحمصة وودز (الياسمين) | WOODS Cafe and Roastery (Al Yasmin)",
+  "Tags": "roastery, specialty coffee, pastries, Al Yasmin",
+  "Description": "House-roasted beans, pour-overs, and fresh bakes in a warm setting.",
+  "Rating": 4.7
+ },
+ {
+  "Title": "Arnella Artisan Pizzeria",
+  "Tags": "pizza, Italian, sourdough, family-friendly",
+  "Description": "Hand-stretched sourdough pizzas with classic and creative toppings.",
+  "Rating": 4.7
+ },
+ {
+  "Title": "Wakame riyadh ",
+  "Tags": "Japanese, sushi, modern, upscale",
+  "Description": "Contemporary Japanese spot for premium sushi, rolls, and donburi.",
+  "Rating": 4.9
+ },
+ {
+  "Title": "Denden Indonesian",
+  "Tags": "Indonesian, homestyle, casual, rice bowls",
+  "Description": "Comfort Indonesian staples like nasi goreng and satay.",
+  "Rating": 3.9
+ },
+ {
+  "Title": "Stock | ستوك",
+  "Tags": "bistro, casual dining, modern Saudi",
+  "Description": "Trendy all-day eatery with global comfort plates.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "LAMA TEA",
+  "Tags": "tea house, specialty tea, desserts, chic",
+  "Description": "Elegant tea blends, milk teas, and petite sweets.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Namq cafe",
+  "Tags": "café, breakfast, desserts, neighborhood",
+  "Description": "Local café known for sweet treats and morning plates.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "IDMI Coffee Roasters",
+  "Tags": "roastery, espresso bar, pour-over, industrial",
+  "Description": "Small-batch roaster serving precise espressos and filters.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "7 Ribs",
+  "Tags": "barbecue, steaks, casual, American",
+  "Description": "Meat-centric spot for ribs, brisket, and grilled sides.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Sastoria",
+  "Tags": "café, Italian-inspired, patisserie, chic",
+  "Description": "Euro-style café with pastries, coffee, and light plates.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Brute",
+  "Tags": "steakhouse, grill, contemporary, premium",
+  "Description": "Modern grill house focusing on quality cuts and shareables.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "DRAFT Café",
+  "Tags": "specialty coffee, work-friendly, airy",
+  "Description": "Bright café with solid brews and laptop-friendly seating.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "MR CHOW Riyadh",
+  "Tags": "Chinese, upscale, iconic, theatrical",
+  "Description": "Stylish fine-Chinese with tableside flair and classics.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Ralph's Coffee (Ralph Lauren)",
+  "Tags": "café, brand café, pastries, lifestyle",
+  "Description": "Fashionable coffee bar with premium beans and desserts.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "SUSHISAMBA Riyadh\r",
+  "Tags": "Nikkei, Peruvian-Japanese, upscale, rooftop",
+  "Description": "High-energy Nikkei plates, sushi, and vibrant cocktails.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "El Camino",
+  "Tags": "Mexican, tacos, casual, lively",
+  "Description": "Street-style tacos, bowls, and zesty salsas.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Toby's Estate Coffee Roasters (KAFD)",
+  "Tags": "specialty coffee, KAFD, pastries, sleek",
+  "Description": "Australian roaster’s KAFD outpost for espresso and filters.",
+  "Rating": 3.8
+ },
+ {
+  "Title": "Cafe Tale",
+  "Tags": "café, desserts, cozy, neighborhood",
+  "Description": "Comforting cakes, light savory bites, and coffee.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Jones The Grocer",
+  "Tags": "gourmet café, deli, all-day dining",
+  "Description": "Aussie gourmet café with hearty breakfasts and classics.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "AOK Kitchen",
+  "Tags": "Mediterranean, healthy, gluten-friendly, chic",
+  "Description": "Light Mediterranean-leaning dishes with a stylish feel.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "JOE & THE JUICE",
+  "Tags": "juices, sandwiches, coffee, trendy",
+  "Description": "Scandinavian chain for juices, shakes, and quick bites.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Urth Caffé - KAFD",
+  "Tags": "organic café, cakes, brunch, KAFD",
+  "Description": "LA-born café for organic coffees, salads, and pastries.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Black Tap KAFD",
+  "Tags": "burgers, craft shakes, American, KAFD",
+  "Description": "NYC burger joint famous for over-the-top shakes.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Monopoly",
+  "Tags": "bistro, modern European, date-night",
+  "Description": "Trendy bistro with pastas, steaks, and small plates.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "TRIESTE KAFD",
+  "Tags": "café, Italian coffee, grab-and-go",
+  "Description": "Italian-inspired espresso bar for quick coffee stops.",
+  "Rating": 3.8
+ },
+ {
+  "Title": "Kuuru Riyadh",
+  "Tags": "Japanese-Peruvian, fine dining, stylish",
+  "Description": "Sleek Nikkei restaurant with refined tasting plates.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Ma'soub Al Asimah",
+  "Tags": "Yemeni, traditional, breakfast, casual",
+  "Description": "Classic Yemeni breakfasts—ma’soub, foul, and breads.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "MIDWAY Coffee",
+  "Tags": "specialty coffee, minimalist, pastries",
+  "Description": "Clean, minimal café with balanced espresso and bakes.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Al Tazaj",
+  "Tags": "Saudi fast food, grilled chicken, family",
+  "Description": "Quick-serve grilled chicken and rice staples.",
+  "Rating": 3.8
+ },
+ {
+  "Title": "Shawarma House",
+  "Tags": "shawarma, Middle Eastern, takeaway",
+  "Description": "Popular shawarma wraps, plates, and fresh juices.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Bab Mashwi",
+  "Tags": "grill, Middle Eastern, casual",
+  "Description": "Mixed grills, kebabs, and family platters.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Falafel Themar - فلافل ثمار",
+  "Tags": "falafel, vegetarian, street-food, quick",
+  "Description": "Fresh-fried falafel, hummus, and sandwiches.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Kunafa Factory",
+  "Tags": "dessert, kunafa, sweets, classic",
+  "Description": "Specialty shop for kunafa and traditional sweets.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Safrat al sultan",
+  "Tags": "Saudi, family dining, traditional",
+  "Description": "Homestyle Saudi dishes in a welcoming setting.",
+  "Rating": 4
+ },
+ {
+  "Title": "Sand clock",
+  "Tags": "café, brunch, pastries, serene",
+  "Description": "Stylish café with brunch plates and calm interiors.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "yummies",
+  "Tags": "bakery-café, desserts, casual",
+  "Description": "Crowd-pleasing cakes, cookies, and quick café bites.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Buffet Salat Almawaed",
+  "Tags": "buffet, Middle Eastern, family, value",
+  "Description": "All-you-can-eat buffet with regional salads and grills.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Ennabi Grill",
+  "Tags": "grill, Lebanese, mixed grill, casual",
+  "Description": "Crowd-favorite for kebabs, tawook and mixed grills with family platters.",
+  "Rating": 3.7
+ },
+ {
+  "Title": "1\/2 Million",
+  "Tags": "café, specialty coffee, quick bites, contemporary",
+  "Description": "Saudi coffee brand pouring solid espresso, iced drinks and simple bakes.",
+  "Rating": 4
+ },
+ {
+  "Title": "The60Pasta",
+  "Tags": "food truck, pasta, Italian fusion, Al Muruj",
+  "Description": "Fun pasta bus serving saucy bowls and bread-bowl specials.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "hintia cafe",
+  "Tags": "café, specialty coffee, boutique, elegant",
+  "Description": "Stylish café known for signature drinks and polished interiors.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Shawayat Al Khaleej",
+  "Tags": "grill, Middle Eastern, casual, family",
+  "Description": "Affordable charcoal grills, rotisserie chicken and rice plates.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Shay w Simsim",
+  "Tags": "breakfast, Levantine, casual, tea",
+  "Description": "Falafel, hummus and wraps with karak tea and quick service.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Bayt Alhummus",
+  "Tags": "Levantine, vegetarian-friendly, mezze",
+  "Description": "Hummus-focused spot with mezze, fresh bread and simple plates.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Al Muruj Basketball Court",
+  "Tags": "sport, outdoor, community",
+  "Description": "Neighborhood outdoor court for pick-up games and casual hoops.",
+  "Rating": 4.1
+ },
+ {
+  "Title": "Fish Auction Center",
+  "Tags": "seafood, market, authentic",
+  "Description": "Local fish market with live bidding and on-the-spot cleaning.",
+  "Rating": 4
+ },
+ {
+  "Title": "   Cafe Quokka | كواكا المروج",
+  "Tags": "café, desserts, Al Muruj, cozy",
+  "Description": "Cute neighborhood café for coffee, cakes and chill hangs.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "Calibrated Coffee Roasters",
+  "Tags": "roastery, specialty coffee, minimalist",
+  "Description": "Precision-minded roaster with dialed-in espresso and filter brews.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "UNSORSO CAFE",
+  "Tags": "café, sandwiches, work-friendly",
+  "Description": "Casual café pouring classics plus simple toasties and snacks.",
+  "Rating": 4.8
+ },
+ {
+  "Title": "كاريبو كوفي - Caribou Coffee",
+  "Tags": "café chain, grab-and-go, classics",
+  "Description": "American chain for mochas, cold brew and comfy seating.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Bloom Cafe",
+  "Tags": "café, patisserie, floral, chic",
+  "Description": "Light brunches, pretty cakes and flower-forward décor.",
+  "Rating": 4.3
+ },
+ {
+  "Title": "Marina Mall",
+  "Tags": "shopping mall, family, dining",
+  "Description": "Large retail complex with brands, cafés and casual eats.",
+  "Rating": 3.9
+ },
+ {
+  "Title": "Pastry Line بيستري لاين",
+  "Tags": "bakery, patisserie, desserts",
+  "Description": "Buttery viennoiserie, cakes and seasonal sweets.",
+  "Rating": 4.7
+ },
+ {
+  "Title": "Raising Cane's",
+  "Tags": "fast food, chicken fingers, American",
+  "Description": "Simple chicken-fingers menu with Texas toast and crinkle fries.",
+  "Rating": 4.7
+ },
+ {
+  "Title": "Al Nadeg - الناضج",
+  "Tags": "Saudi, grilled chicken, family dining",
+  "Description": "Long-running local chain for mandi, kabsa and charcoal chicken.",
+  "Rating": 4
+ },
+ {
+  "Title": "جافا كافيه Java Cafe",
+  "Tags": "café, neighborhood, desserts",
+  "Description": "Familiar café for hot drinks, cakes and casual meetups.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Plenty SLD's",
+  "Tags": "burgers, sliders, casual",
+  "Description": "Slider-focused fast-casual with loaded sides.",
+  "Rating": 4.2
+ },
+ {
+  "Title": "Tikka Apple | تكا ابل",
+  "Tags": "Indian-inspired, tikka, grills",
+  "Description": "Tikka platters, curries and fresh breads in a simple setting.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "Al Maram Park",
+  "Tags": "park, family, outdoor",
+  "Description": "Community green space with walking paths and play areas.",
+  "Rating": 3.8
+ },
+ {
+  "Title": "Si",
+  "Tags": "café, minimal, specialty coffee",
+  "Description": "Minimalist coffee bar for espresso, V60 and light bites.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "At Takhassusi Restaurant",
+  "Tags": "Saudi, mandi\/kabsa, grills",
+  "Description": "Traditional rice dishes, soups and charcoal meats.",
+  "Rating": 3.6
+ },
+ {
+  "Title": "FAHRAS BY MID-SAJJ",
+  "Tags": "bakery, manakeesh, Levantine",
+  "Description": "Freshly baked saj wraps, manakeesh and breakfast plates.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "LAHORI VILLAGE",
+  "Tags": "Pakistani, grill, family",
+  "Description": "Lahori BBQ, karahi and naan; hearty family platters.",
+  "Rating": 4
+ },
+ {
+  "Title": "Abu Noman resturent",
+  "Tags": "Yemeni\/Indian, mixed menu, casual",
+  "Description": "Mixed Middle-Eastern\/Asian comfort dishes at value prices.",
+  "Rating": 3.9
+ },
+ {
+  "Title": "هلل - HALL",
+  "Tags": "café, modern, specialty",
+  "Description": "Contemporary coffee bar with neat latte art and pastries.",
+  "Rating": 4.8
+ },
+ {
+  "Title": "Al Haram Center",
+  "Tags": "shopping, variety, budget",
+  "Description": "Value-focused retail center with food options nearby.",
+  "Rating": 4
+ },
+ {
+  "Title": "Sica",
+  "Tags": "bistro, Italian-leaning, date-night",
+  "Description": "Chic bistro for pastas, mains and small plates.",
+  "Rating": 4.5
+ },
+ {
+  "Title": "OKAWA Cafe King Fahad",
+  "Tags": "café, Japanese-inspired, desserts",
+  "Description": "Light Japanese-leaning drinks\/desserts with café staples.",
+  "Rating": 4.6
+ },
+ {
+  "Title": "YUNLAI CHINESE RESTAURANT (云来)",
+  "Tags": "Chinese, Cantonese\/Sichuan, family",
+  "Description": "Classic Chinese menu—dumplings, noodles and stir-fries.",
+  "Rating": 4.4
+ },
+ {
+  "Title": "Kabda w Jebn Restaurant",
+  "Tags": "breakfast, Yemeni, affordable",
+  "Description": "Liver-and-cheese sandwiches, foul, eggs and fresh bread.",
+  "Rating": 3.9
+ }
 ]

@@ -31,14 +31,114 @@ class MetroDataIndexer:
         )
     
     def index_all_data(self):
-        """Index all data files"""
+        """Index all data files into a single unified collection"""
         logger.info("Starting data indexing for Riyadh Metro Assistant")
         
-        self._index_comprehensive_knowledge_base()
-        self._index_amenities_data()
-        
-        logger.info("Completed indexing all data files")
+        try:
+            # Index all data into unified collection
+            self._index_unified_knowledge_base()
+            
+            logger.info("Completed indexing all data files")
+            return {"message": "All metro data indexed successfully", "collections_created": ["unified_knowledge"]}
+            
+        except Exception as e:
+            logger.error(f"Failed to index all data: {e}", exc_info=True)
+            raise e
     
+    def _index_unified_knowledge_base(self):
+        """Index all data into a single unified collection"""
+        logger.info("Indexing unified knowledge base...")
+        
+        collection_name = "unified_knowledge"
+        collection = self._get_or_create_collection(collection_name)
+        
+        documents = []
+        metadatas = []
+        ids = []
+        
+        # Index metro knowledge base
+        self._add_metro_knowledge_to_unified(collection, documents, metadatas, ids)
+        
+        # Index amenities data
+        self._add_amenities_to_unified(collection, documents, metadatas, ids)
+        
+        # Add all documents to collection
+        if documents:
+            self._add_to_collection(collection, ids, documents, metadatas)
+            logger.info(f"Indexed unified knowledge base with {len(documents)} total documents")
+    
+    def _add_metro_knowledge_to_unified(self, collection, documents, metadatas, ids):
+        """Add metro knowledge base to unified collection"""
+        logger.info("Adding metro knowledge base to unified collection...")
+        
+        data_path = "./data/riyadh_knowledgebase.txt"
+        if not os.path.exists(data_path):
+            logger.warning(f"Knowledge base file not found: {data_path}")
+            return
+        
+        with open(data_path, 'r', encoding='utf-8') as f:
+            content = f.read()
+        
+        sections = self._split_comprehensive_content(content)
+        
+        for section_title, section_content in sections:
+            doc_content = f"Section: {section_title}\n\n{section_content}"
+            
+            documents.append(doc_content.strip())
+            metadatas.append({
+                "type": "metro_rules",
+                "section": section_title,
+                "category": "comprehensive_knowledge",
+                "source": "riyadh_knowledgebase.txt"
+            })
+            ids.append(str(uuid.uuid4()))
+        
+        logger.info(f"Added {len(sections)} metro knowledge sections")
+    
+    def _add_amenities_to_unified(self, collection, documents, metadatas, ids):
+        """Add amenities data to unified collection"""
+        logger.info("Adding amenities data to unified collection...")
+        
+        data_path = "./data/amenities.json"
+        if not os.path.exists(data_path):
+            logger.warning(f"Amenities file not found: {data_path}")
+            return
+        
+        if os.path.getsize(data_path) == 0:
+            logger.warning("Amenities file is empty")
+            return
+        
+        with open(data_path, 'r', encoding='utf-8') as f:
+            amenities_data = json.load(f)
+        
+        for amenity in amenities_data:
+            title = amenity.get('Title', amenity.get('title', 'Unknown'))
+            description = amenity.get('Description', amenity.get('description', 'N/A'))
+            rating = amenity.get('Rating', amenity.get('rating', 'N/A'))
+            tags = amenity.get('Tags', 'N/A')
+            
+            doc_content = f"""
+            Location Name: {title}
+            Description: {description}
+            Rating: {rating}/5
+            Tags: {tags}
+            """
+            
+            category = self._categorize_amenity(title, description)
+            
+            documents.append(doc_content.strip())
+            metadatas.append({
+                "type": "amenities",
+                "title": title,
+                "rating": rating,
+                "tags": tags,
+                "category": category,
+                "search_terms": f"{title} {category} {description[:100]}"
+            })
+            ids.append(str(uuid.uuid4()))
+        
+        logger.info(f"Added {len(amenities_data)} amenities")
+
     def _index_comprehensive_knowledge_base(self):
         """Index the comprehensive Riyadh Metro knowledge base"""
         logger.info("Indexing comprehensive Riyadh Metro knowledge base...")

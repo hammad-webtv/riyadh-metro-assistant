@@ -192,47 +192,41 @@ class MetroSearchEngine:
         self.persist_directory = persist_directory
         self.embedding_model = OpenAIEmbeddings(model='text-embedding-ada-002')
         self._search_cache = {}
-        self.collections = ["metro_rules", "amenities"]  # Search both collections
+        self.collections = ["unified_knowledge"]  # Search unified collection
     
     def query_search_all_collections(self, query: str, num_retrievals: int = 8) -> List[str]:
-        """Search ALL collections and return combined results"""
-        logger.info(f"=== Starting comprehensive search across all collections for query: {query[:50]}... ===")
-        
-        all_results = []
+        """Search unified collection and return results"""
+        logger.info(f"=== Starting unified search for query: {query[:50]}... ===")
         
         try:
-            # Search each collection
-            for collection_name in self.collections:
-                try:
-                    logger.info(f"Searching collection: {collection_name}")
-                    vectordb = Chroma(
-                        collection_name=collection_name,
-                        embedding_function=self.embedding_model,
-                        persist_directory=self.persist_directory
-                    )
-                    
-                    # Get results from this collection
-                    collection_results = vectordb.similarity_search(query, k=num_retrievals)
-                    collection_contents = [result.page_content for result in collection_results]
-                    
-                    # Add collection identifier to each result
-                    for content in collection_contents:
-                        all_results.append(f"[{collection_name.upper()}] {content}")
-                    
-                    logger.info(f"Found {len(collection_contents)} results from {collection_name}")
-                    
-                except Exception as e:
-                    logger.warning(f"Error searching collection {collection_name}: {e}")
-                    continue
+            # Search unified collection
+            collection_name = "unified_knowledge"
+            logger.info(f"Searching unified collection: {collection_name}")
             
-            # Sort and limit results
-            all_results = all_results[:num_retrievals * 2]  # Allow more results since we're searching multiple collections
+            vectordb = Chroma(
+                collection_name=collection_name,
+                embedding_function=self.embedding_model,
+                persist_directory=self.persist_directory
+            )
             
-            logger.info(f"Comprehensive search completed successfully, found {len(all_results)} total results")
+            # Get results from unified collection
+            collection_results = vectordb.similarity_search(query, k=num_retrievals)
+            collection_contents = [result.page_content for result in collection_results]
+            
+            # Add type identifier to each result based on metadata
+            all_results = []
+            for i, result in enumerate(collection_results):
+                content = result.page_content
+                metadata = result.metadata
+                doc_type = metadata.get('type', 'unknown')
+                all_results.append(f"[{doc_type.upper()}] {content}")
+            
+            logger.info(f"Found {len(collection_contents)} results from unified collection")
+            logger.info(f"Unified search completed successfully, found {len(all_results)} total results")
             return all_results
             
         except Exception as e:
-            logger.error(f"Error in comprehensive search: {e}")
+            logger.error(f"Error in unified search: {e}")
             return []
     
     def query_search_docs(self, query: str, num_retrievals: int = 8) -> List[str]:

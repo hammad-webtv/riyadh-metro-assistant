@@ -1,4 +1,4 @@
-name: FastAPI CI/CD Pipeline
+name: Riyadh Metro assistant CI/CD Pipeline
 
 on:
   push:

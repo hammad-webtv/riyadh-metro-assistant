@@ -123,11 +123,20 @@ async def clear_conversation(user_id: str):
 async def get_conversation_history(user_id: str):
     """Get conversation history for a specific user"""
     try:
-        # This would require adding a method to get conversation history
-        # For now, we'll return a placeholder
-        return {"message": "Conversation history endpoint not yet implemented"}
+        history_text = bot.conversation_manager.get_conversation_history_text(user_id)
+        return {"user_id": user_id, "history": history_text}
     except Exception as e:
         logger.error(f"Error getting conversation history: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/conversation/{user_id}/status")
+async def get_conversation_status(user_id: str):
+    """Get detailed conversation status including time until reset"""
+    try:
+        status = bot.conversation_manager.get_conversation_status(user_id)
+        return status
+    except Exception as e:
+        logger.error(f"Error getting conversation status: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/index_all_data")

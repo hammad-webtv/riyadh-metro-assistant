@@ -347,14 +347,21 @@ class MetroBot():
         if conversation_history:
             # Take last 5 messages to avoid context overflow
             recent_history = conversation_history[-5:]
-            history_text = "\n".join([f"{'User' if isinstance(msg, HumanMessage) else 'Assistant'}: {msg.content}" for msg in recent_history])
+            history_text = "=== CONVERSATION HISTORY ===\n"
+            for i, msg in enumerate(recent_history, 1):
+                if isinstance(msg, HumanMessage):
+                    history_text += f"User Message {i}: {msg.content}\n"
+                elif isinstance(msg, AIMessage):
+                    history_text += f"Assistant Response {i}: {msg.content}\n"
+            history_text += "=== END HISTORY ===\n"
         else:
-            history_text = ""
+            history_text = "=== NO PREVIOUS CONVERSATION ===\n"
         
         # Create prompt input
         prompt_input = {
             "context": limited_context,
             "history": history_text,
+            "history_length": len(conversation_history),
             "user_query": user_query,
             "lang": "en"
         }

@@ -51,8 +51,8 @@ async def chat(request: ChatRequest):
     try:
         logger.info(f"Processing user query for thread_id: {request.userid}")
         
-        # Process the query
-        response_data = bot.process_query(request.question)
+        # Process the query with user_id for conversation history
+        response_data = bot.process_query(request.question, user_id=request.userid)
         
         # Extract the response and map_list
         response = response_data.get("answer", "I'm sorry, I encountered an error while processing your request. Please try again.")
@@ -97,6 +97,37 @@ async def chat(request: ChatRequest):
         
     except Exception as e:
         logger.error(f"Error processing chat request: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/conversation/stats")
+async def get_conversation_stats():
+    """Get conversation statistics"""
+    try:
+        stats = bot.get_conversation_stats()
+        return stats
+    except Exception as e:
+        logger.error(f"Error getting conversation stats: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.delete("/conversation/{user_id}")
+async def clear_conversation(user_id: str):
+    """Clear conversation history for a specific user"""
+    try:
+        bot.clear_user_conversation(user_id)
+        return {"message": f"Conversation history cleared for user: {user_id}"}
+    except Exception as e:
+        logger.error(f"Error clearing conversation: {e}", exc_info=True)
+        raise HTTPException(status_code=500, detail=str(e))
+
+@app.get("/conversation/{user_id}/history")
+async def get_conversation_history(user_id: str):
+    """Get conversation history for a specific user"""
+    try:
+        # This would require adding a method to get conversation history
+        # For now, we'll return a placeholder
+        return {"message": "Conversation history endpoint not yet implemented"}
+    except Exception as e:
+        logger.error(f"Error getting conversation history: {e}", exc_info=True)
         raise HTTPException(status_code=500, detail=str(e))
 
 @app.post("/index_all_data")

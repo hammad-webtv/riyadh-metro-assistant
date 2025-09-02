@@ -158,7 +158,7 @@ class MetroBot():
         logger.info(f"Initializing MetroBot with model: {llm_model_name}")
         self.llm = ChatOpenAI(
             model=llm_model_name,
-            temperature=0.7,
+            temperature=0.2,
             max_tokens=500,
             request_timeout=30
         )

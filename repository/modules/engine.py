@@ -29,25 +29,24 @@ class ConversationManager:
         self.cleanup_thread = threading.Thread(target=self._cleanup_loop, daemon=True)
         self.cleanup_thread.start()
     
-    def add_message(self, user_id: str, message: str, is_user: bool = True):
-        """Add a message to the conversation history"""
+    def add_message(self, user_id: str, message: Any, is_user: bool = True):
+        """Add a message to conversation history"""
+        current_time = time.time()
         with self.lock:
-            current_time = time.time()
-            
             if user_id not in self.conversations:
                 self.conversations[user_id] = {
                     'messages': [],
-                    'last_activity': current_time
+                    'last_activity': current_time,
+                    'created_at': current_time
                 }
             
             # Add message
-            if is_user:
-                self.conversations[user_id]['messages'].append(HumanMessage(content=message))
-            else:
-                self.conversations[user_id]['messages'].append(AIMessage(content=message))
+            self.conversations[user_id]['messages'].append(message)
             
-            # Update last activity
+            # Update last activity timestamp
             self.conversations[user_id]['last_activity'] = current_time
+            
+            logger.info(f"Added message for user {user_id}, total messages: {len(self.conversations[user_id]['messages'])}")
     
     def get_conversation_history(self, user_id: str) -> List[Any]:
         """Get conversation history for a user"""
@@ -82,6 +81,7 @@ class ConversationManager:
         with self.lock:
             if user_id in self.conversations:
                 del self.conversations[user_id]
+                logger.info(f"Manually cleared conversation for user: {user_id}")
     
     def _cleanup_loop(self):
         """Background thread to clean up old conversations"""
@@ -92,25 +92,46 @@ class ConversationManager:
                 
                 with self.lock:
                     for user_id, conv_data in self.conversations.items():
-                        if current_time - conv_data['last_activity'] > self.cleanup_interval:
+                        time_since_activity = current_time - conv_data['last_activity']
+                        if time_since_activity > self.cleanup_interval:
                             to_remove.append(user_id)
+                            logger.info(f"Marking user {user_id} for cleanup - inactive for {time_since_activity:.1f}s (limit: {self.cleanup_interval}s)")
                     
                     # Remove old conversations
                     for user_id in to_remove:
                         del self.conversations[user_id]
-                        logger.info(f"Cleaned up conversation for user: {user_id} after {self.cleanup_interval}s of inactivity")
+                        logger.info(f"✅ CLEANED UP conversation for user: {user_id} after {self.cleanup_interval}s of inactivity")
                 
-                # Sleep for 10 seconds before next cleanup check
-                time.sleep(10)
+                # Sleep for 5 seconds before next cleanup check (more frequent for better accuracy)
+                time.sleep(5)
                 
             except Exception as e:
                 logger.error(f"Error in cleanup loop: {e}")
-                time.sleep(10)
+                time.sleep(5)
     
     def get_active_conversations_count(self) -> int:
         """Get count of active conversations"""
         with self.lock:
             return len(self.conversations)
+    
+    def get_conversation_status(self, user_id: str) -> Dict[str, Any]:
+        """Get detailed status of a conversation including time since last activity"""
+        with self.lock:
+            if user_id in self.conversations:
+                current_time = time.time()
+                last_activity = self.conversations[user_id]['last_activity']
+                time_since_activity = current_time - last_activity
+                time_until_cleanup = max(0, self.cleanup_interval - time_since_activity)
+                
+                return {
+                    'user_id': user_id,
+                    'message_count': len(self.conversations[user_id]['messages']),
+                    'last_activity': last_activity,
+                    'time_since_activity': f"{time_since_activity:.1f}s",
+                    'time_until_cleanup': f"{time_until_cleanup:.1f}s",
+                    'will_reset_in': f"{time_until_cleanup:.1f}s" if time_until_cleanup > 0 else "RESETTING NOW"
+                }
+            return {'user_id': user_id, 'status': 'No conversation found'}
 
 # Define the state schema
 class AgentState(BaseModel):
@@ -440,8 +461,8 @@ class MetroBot():
             state.final_answer = response.content
             
             # Add messages to conversation history
-            self.conversation_manager.add_message(user_id, user_query, is_user=True)
-            self.conversation_manager.add_message(user_id, response.content, is_user=False)
+            self.conversation_manager.add_message(user_id, HumanMessage(content=user_query))
+            self.conversation_manager.add_message(user_id, AIMessage(content=response.content))
             
         except Exception as e:
             logger.error(f"Error generating response: {e}")

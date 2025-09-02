@@ -20,7 +20,7 @@ logger = logging.getLogger(__name__)
 class ConversationManager:
     """Manages conversation history with automatic cleanup after inactivity"""
     
-    def __init__(self, cleanup_interval: int = 30):
+    def __init__(self, cleanup_interval: int = 60):
         self.conversations: Dict[str, Dict[str, Any]] = {}
         self.cleanup_interval = cleanup_interval
         self.lock = threading.Lock()
@@ -164,7 +164,7 @@ class MetroBot():
         )
         self.tools = get_tools()
         self.search_engine = get_search_engine()
-        self.conversation_manager = ConversationManager(cleanup_interval=30)
+        self.conversation_manager = ConversationManager(cleanup_interval=60)
         self._build_graph()
     
     def _build_graph(self):
@@ -260,23 +260,91 @@ class MetroBot():
         logger.info(f"Step 2: Starting metro route tool execution")
         
         try:
-            # Extract destination from query
-            # This is a simplified implementation - you might want to enhance this
-            if "to" in user_query.lower():
-                parts = user_query.lower().split("to")
-                if len(parts) > 1:
-                    destination = parts[1].strip()
-                    # Here you would call your metro route tool
-                    # For now, we'll set a placeholder context
-                    state.context = f"Route information for destination: {destination}. Metro route tool would be called here."
+            # Find the metro route tool
+            metro_tool = None
+            for tool in self.tools:
+                if tool.name == "metro_route_tool":
+                    metro_tool = tool
+                    break
+            
+            if metro_tool:
+                # Extract destination from query
+                destination = ""
+                if "to" in user_query.lower():
+                    parts = user_query.lower().split("to")
+                    if len(parts) > 1:
+                        destination = parts[1].strip()
+                    else:
+                        destination = "Riyadh"
+                elif "from" in user_query.lower() and "to" in user_query.lower():
+                    # Handle "from X to Y" format
+                    parts = user_query.lower().split("to")
+                    if len(parts) > 1:
+                        destination = parts[1].strip()
+                    else:
+                        destination = "Riyadh"
                 else:
-                    state.context = "Please specify a destination for route planning."
+                    # Try to extract destination from other patterns
+                    if "directions" in user_query.lower():
+                        # Remove common words and extract destination
+                        words = user_query.lower().replace("directions", "").replace("to", "").replace("from", "").replace("kafd", "").replace("metro", "").replace("station", "").strip()
+                        destination = words if words else "Riyadh"
+                    else:
+                        destination = "Riyadh"
+                
+                logger.info(f"Extracted destination: {destination}")
+                
+                # Call the metro route tool
+                result = metro_tool._run(destination)
+                
+                if result.get("success"):
+                    route_data = result.get("data", {})
+                    
+                    # Set context for response generation
+                    context = f"Route from KAFD Metro Station to {destination}:\n"
+                    context += f"Duration: {route_data.get('duration', 'N/A')}\n"
+                    context += f"Distance: {route_data.get('distance', 'N/A')}\n"
+                    context += f"Summary: {route_data.get('summary', 'N/A')}\n"
+                    
+                    # Add step details
+                    steps = route_data.get('steps', [])
+                    for i, step in enumerate(steps[:3], 1):  # Limit to first 3 steps
+                        context += f"Step {i}: {step.get('instruction', 'N/A')}\n"
+                    
+                    state.context = context
+                    
+                    # Generate map_list for frontend
+                    from datetime import datetime
+                    map_list = []
+                    route_info = {
+                        "type": "metro_route",
+                        "summary": route_data.get('summary', ''),
+                        "duration": route_data.get('duration', ''),
+                        "distance": route_data.get('distance', ''),
+                        "steps": route_data.get('steps', []),
+                        "origin": route_data.get('origin', 'KAFD Metro Station'),
+                        "destination": route_data.get('destination', destination),
+                        "timestamp": datetime.now().isoformat()
+                    }
+                    map_list.append(route_info)
+                    state.tool_results["map_list"] = map_list
+                    
+                    logger.info(f"Metro route tool returned map_list with {len(map_list)} items")
+                    
+                else:
+                    error_msg = result.get('error', 'Unknown error occurred')
+                    suggestion = result.get('suggestion', 'Please try rephrasing your question.')
+                    state.context = f"I couldn't find a route to {destination}. {error_msg}. {suggestion}"
+                    state.tool_results["map_list"] = []
+                    
             else:
-                state.context = "Please specify where you want to go for route planning."
+                state.context = "Metro route tool is not available. Please ask about metro rules, amenities, or other information instead."
+                state.tool_results["map_list"] = []
                 
         except Exception as e:
             logger.error(f"Error in metro route tool: {e}")
             state.context = "I encountered an error while planning your route. Please try rephrasing your question."
+            state.tool_results["map_list"] = []
         
         step2_time = time.time() - step2_start
         logger.info(f"Step 2: Metro route tool completed in {step2_time:.2f}s")
